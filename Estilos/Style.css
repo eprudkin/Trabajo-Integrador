@@ -29,3 +29,34 @@ body{
         color: antiquewhite;
      
     }
+
+
+    .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination button, .pagination a {
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .pagination .current {
+            background-color: white;
+            border: 1px solid red;
+                      cursor: default;
+        }
+
+        .pagination a.dots {
+            cursor: default;
+        }
+
+        .pagination .active {
+            background-color: white;
+            color: red;
+        }
