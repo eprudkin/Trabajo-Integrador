@@ -60,3 +60,33 @@ body{
             background-color: white;
             color: red;
         }
+
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-button {
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+
+        .stock {
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+        .add-to-cart-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
