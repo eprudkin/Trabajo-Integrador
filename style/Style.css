@@ -1,0 +1,92 @@
+header{
+    width: 1800px; ;
+    height: 120px;
+    top: 17.71px;
+    left:101.08 px;
+    background-color: #30343f;
+    display:flex;
+    justify-content: space-between;
+    color: antiquewhite;
+
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+body{
+    font-family: lato;}
+
+    footer{
+        width: 1800px; ;
+        height: 120px;
+        top: 17.71px;
+        left:101.08 px;
+        background-color: #30343f;
+        display:flex;
+        justify-content: space-between;
+        color: antiquewhite;
+     
+    }
+
+
+    .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination button, .pagination a {
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .pagination .current {
+            background-color: white;
+            border: 1px solid red;
+                      cursor: default;
+        }
+
+        .pagination a.dots {
+            cursor: default;
+        }
+
+        .pagination .active {
+            background-color: white;
+            color: red;
+        }
+
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-button {
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+
+        .stock {
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+        .add-to-cart-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
