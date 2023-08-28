@@ -1,12 +1,18 @@
+:root {
+    --site-header : #383c46;
+    --site-main-background: #ffffff;
+    --site-color-font: antiquewhite;
+}
+
 header{
     width: 1800px; ;
     height: 120px;
     top: 17.71px;
     left:101.08 px;
-    background-color: #30343f;
+    background-color: var(--site-header);
     display:flex;
     justify-content: space-between;
-    color: antiquewhite;
+    color: var(--site-color-font);
 
 }
 
@@ -23,7 +29,7 @@ body{
         height: 120px;
         top: 17.71px;
         left:101.08 px;
-        background-color: #30343f;
+        background-color: var(--site-header);
         display:flex;
         justify-content: space-between;
         color: antiquewhite;
