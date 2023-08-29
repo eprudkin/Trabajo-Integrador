@@ -38,15 +38,79 @@ body>header>div>picture>a>.logo {
 body>.container {
     max-width: 1440px;
 }
-body>main>.nuevos {
-    max-width: 1440px;
-    height: 388px;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+body>footer {
+    width: 100%;
+    padding: 20px;
     color: var(--site-color-font);
-    background-position:bottom center;
-    background-image: url(../multimedia/funkos-banner.webp);
+    background-color: var(--site-header);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
-body>main>.card {
+
+body>footer>section {
+    width: 100%;
+}
+
+
+
+ 
+
+
+body>footer>section>nav>picture>img {
+    width: 25%;
+}
+@media (max-width:1024px) {
+
+
+    body>main>.nuevos {
+        max-width: 1440px;
+        height: fit-content;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--site-color-font);
+        background-position:bottom center;
+        background-image: url(../multimedia/funkos-banner.webp);
+    }
+
+    body>footer>section>nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+
+    body>footer>section>nav>ul {
+        list-style: none;
+        text-align: center;
+    }  
+
+    body>footer>section>nav>picture{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width:1024px) {
+    body>main>.nuevos {
+        max-width: 1440px ;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--site-color-font);
+        background-position:center center;
+        background-image: url(../multimedia/funkos-banner.webp);
+    }
+    body>main>.nuevos>article {       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        
     
 }
