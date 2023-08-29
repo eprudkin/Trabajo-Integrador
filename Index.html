@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/Style.css">
     <title>Home | Funkoshop</title>
 </head>
 
 <body>
     <!-- Inicio de header -->
-    <header>
-        <picture>
-            <a href="Index.html">
-                <img class="logo" src="multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
-        </picture>
-        <H3>FUNKOSHOP</H3>
-        <nav>
-            <ul>
+    <header class="d-flex flex-row justify-content-between align-items-center">
+        <div>
+            <picture>
+                <a href="Index.html">
+                    <img class="logo" src="multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
+            </picture>
+            <H3>FUNKOSHOP</H3>
+        </div>
+        <nav class="w-50">
+            <ul class="d-flex flex-row justify-content-around align-items-lg-center list-unstyled">
                 <li>
                     <a href="pages/Busqueda.html" class="nav_link">SHOP</a>
                 </li>
@@ -42,8 +45,8 @@
     </header>
     <!-- Fin de header -->
     <main>
-        <section><!-- Inicio de BANNER -->
-            <article>
+        <section class=" col-xxl-8 px-5 py-5 nuevos"><!-- Inicio de BANNER -->
+            <article class="row flex-lg-row-reverse align-items-center">
                 <h3>Nuevos Ingresos</h3>
                 <p>Desubrí el próximo Funko Pop de tu colección</p>
                 <a href="pages/Busqueda.html">SHOP</a>
@@ -119,7 +122,8 @@
                     <article>
                         <a href=""></a>
                         <picture>
-                            <img src="multimedia/harry-potter/luna-1.webp" alt="Figura coleccioable Funko de luna lovegoof">
+                            <img src="multimedia/harry-potter/luna-1.webp"
+                                alt="Figura coleccioable Funko de luna lovegoof">
                         </picture>
                         <div>
                             <P>HARRY POTTER</P>
@@ -145,14 +149,17 @@
                     <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
                 </picture>
             </nav>
-        </section> 
+        </section>
         <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
-        
-        
+
+
     </footer>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">Boosrtrap</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">Boosrtrap</script>
 </body>
+
 </html>
