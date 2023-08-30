@@ -55,13 +55,22 @@ body>footer>section {
     width: 100%;
 }
 
-
+.SHOP {
+    display: inline-block;
+    padding: 10px 80px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
  
 
 
 body>footer>section>nav>picture>img {
-    width: 25%;
+    width: 15%;
 }
 @media (max-width:1024px) {
 
@@ -74,6 +83,7 @@ body>footer>section>nav>picture>img {
         color: var(--site-color-font);
         background-position:bottom center;
         background-image: url(../multimedia/funkos-banner.webp);
+        background-position: bottom center;
     }
 
     body>footer>section>nav {
@@ -90,9 +100,9 @@ body>footer>section>nav>picture>img {
     }  
 
     body>footer>section>nav>picture{
-        width: 100%;
+        width: 30%;
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 }
 @media (min-width:1024px) {
