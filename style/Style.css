@@ -36,7 +36,7 @@ body>header>div>picture>a>.logo {
 }
 
 body>.container {
-    max-width: 1440px;
+    max-width:  100%;
 }
 
 
@@ -55,23 +55,6 @@ body>footer>section {
     width: 100%;
 }
 
-.SHOP {
-    display: inline-block;
-    padding: 10px 80px;
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
- 
-
-
-body>footer>section>nav>picture>img {
-    width: 15%;
-}
 @media (max-width:1024px) {
 
 
@@ -83,7 +66,6 @@ body>footer>section>nav>picture>img {
         color: var(--site-color-font);
         background-position:bottom center;
         background-image: url(../multimedia/funkos-banner.webp);
-        background-position: bottom center;
     }
 
     body>footer>section>nav {
@@ -100,14 +82,31 @@ body>footer>section>nav>picture>img {
     }  
 
     body>footer>section>nav>picture{
-        width: 30%;
+        width: 100%;
         display: flex;
-        justify-content: left;
+        justify-content: center;
     }
+
+    body>main>.card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body>main>.card>.card-img>img {
+        width: 100%;
+    }           
+
+    body>main>section>.lanzamientos>.card>.card-img>img {
+        width: 50%;
+    }
+
+
+
 }
 @media (min-width:1024px) {
+
     body>main>.nuevos {
-        max-width: 1440px ;
+        max-width: 1440px;
         height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -121,6 +120,24 @@ body>footer>section>nav>picture>img {
         align-items: center;
         justify-content: center;
     }
+
+    body>main>.card{
+        width: 60%;
+        height: 350px;
+        margin-left: 20%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    body>main>.card>.card-body {
+        max-width: 75%;
+        height: max-content;
+    }
+    body>main>.card>.card-img {
         
-    
+        width: 50%;
+    }
+
+    body>main>.card>.card-img>img {
+        width: 100%;
+    }    
 }
