@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleccion</title>
+    <title>Document</title>
     <link rel="stylesheet" href="Estilos/Style.css">
-    <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -50,74 +49,73 @@
         </nav>
     </header>
 
-
-<h6>STAR WARS</h6>
-<H2>BABY YODA BLUEBALL</H2>
-<img src="multimedia/star-wars/baby-yoda-1.webp" alt="">
-<p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada</p>
-<h3>$ 1799,99</h3>
-
-<div class="stock">
-    
-    <input type="number" class="quantity-input" id="quantity" value="0">
-    <button class="quantity-button" id="increase">+</button>
-    <button class="quantity-button" id="decrease">-</button>
-    <button class="add-to-cart-button">Agregar al Carrito</button>
-</div>
-
-<p>
-Ver metodos de pago - 3 CUOTAS SIN INTERÉS />
-
-</p>
-
-
-
-<H1>PRODUCTOS RELACIONADOS</H1>
-<P>NUEVO</P>
-<img src="multimedia/star-wars/trooper-1.webp" alt="">
-<P>STAR WARS</P>
-<p>STORMTROOPER LIGHTSABER</p>
-<p>$1799,99</p>
-<p>3 CUOTAS SIN INTERÉS</p>
-
-
-<P>NUEVO</P>
-<img src="multimedia/pokemon/pidgeotto-1.webp" alt="">
-<P>POKEMON</P>
-<p>PIDGEOTTO</p>
-<p>$1799,99</p>
-<p>3 CUOTAS SIN INTERÉS</p>
-
-
-<P>NUEVO</P>
-<img src="multimedia/harry-potter/luna-1.webp" alt="">
-<P>HARRY POTTER</P>
-<p>LUNA LOVEGOOD LION MASK</p>
-<p>$1799,99</p>
-<p>3 CUOTAS SIN INTERÉS</p>
-
-
-
-
+  
+  
+    <div id="search-container">
+        <button id="search-button" onclick="performSearch()">&#128269;</button>
+        <input type="text" id="search-input" placeholder="Código, nombre o categoría">
+       
+      </div>
 
     
-<footer>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
-                <li><a href="" class="nav_link">INGRESAR</a></li>
-                <li><a href="" class="nav_link">CONTACTO </a></li>
-            </ul>
-            <picture>
-                <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
-            </picture>
-        </nav>
-    </section>
-        <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous">Boosrtrap</script>
+<div id="add-header">
+    <h3>AGREGAR</h3>
+    <button id="add-button">&#43;</button>
+  </div>
+
+
+<h3>LISTADO DE PRODUCTOS</h3>
+
+<table id="product-table">
+    <tr>
+      <th>ID</th>
+      <th>Código</th>
+      <th>Nombre del producto</th>
+      <th>Categoría</th>
+      <th>Acciones</th>
+    </tr>
+    <!-- Aquí se generarán las filas de productos dinámicamente -->
+  </table>
+  
+  <form id="product-form">
+    <!-- ... (el resto de tu formulario) ... -->
+  </form>
+  
+  <script src="admin.js"></script>
+  </body>
+  </html>
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
+                    <li><a href="" class="nav_link">INGRESAR</a></li>
+                    <li><a href="" class="nav_link">CONTACTO </a></li>
+                </ul>
+                <picture>
+                    <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+                </picture>
+            </nav>
+        </section>
+            <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">Boosrtrap</script>
+ 
 </body>
 </html>
