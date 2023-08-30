@@ -1,26 +1,24 @@
 :root {
-    --site-header : #383c46;
+    --site-header: #383c46;
     --site-main-background: #ffffff;
     --site-color-font: antiquewhite;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--site-color-font);
 }
-
 header>nav {
     max-width: 1440px;
     min-height: fit-content;
     color: var(--site-color-font);
     background-color: var(--site-header);
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
 }
 
 header>nav>div>picture>a>.logo {
@@ -28,16 +26,17 @@ header>nav>div>picture>a>.logo {
 }
 
 .container {
-    max-width:  1440px;
+    max-width: 1440px;
 }
- main>section>article>.divider {
-    
+
+main>section>article>.divider {
+
     width: 100%;
     height: 0.1rem;
     border: 3px solid red;
     border-radius: 20px;
     margin: 15px;
- }
+}
 
 footer {
     width: 100%;
@@ -63,7 +62,7 @@ footer>section {
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--site-color-font);
-        background-position:bottom center;
+        background-position: bottom center;
         background-image: url(../multimedia/funkos-banner.webp);
     }
 
@@ -74,31 +73,33 @@ footer>section {
 
     main>.card>.card-img>img {
         width: 100%;
-    }           
+    }
 
     main>section>.lanzamientos>.card>.card-img>img {
         width: 50%;
     }
-    main>div>aside{
+
+    main>div>aside {
         display: none;
     }
-  
-    
-    main>div>section>.card{
+
+
+    main>div>section>.card {
         width: 100%;
     }
+
     main>div>section>.card>picture>img {
         width: 100%;
     }
-        
+
     main>.pagination>div {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-        
-        
+
+
 }
 
 
@@ -111,49 +112,67 @@ footer>section {
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--site-color-font);
-        background-position:center center;
+        background-position: center center;
         background-image: url(../multimedia/funkos-banner.webp);
     }
-    body>main>.nuevos>article {       
+
+    body>main>.nuevos>article {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
+    header>nav {
+        max-width: 1440px;
+        min-height: fit-content;
+        color: var(--site-color-font);
+        background-color: var(--site-header);
+    }
+    
+    header>nav>div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+
     /* card del index */
-    body>main>.card{
+    body>main>.card {
         width: 60%;
         height: 350px;
         margin-left: 20%;
         margin-bottom: 15px;
         margin-top: 15px;
     }
-    
+
     body>main>.card>.card-body {
         max-width: 75%;
         height: max-content;
     }
+
     body>main>.card>.card-img {
         width: 50%;
     }
-    
+
     body>main>.card>.card-img>img {
         width: 100%;
     }
+
     /* Fin de card de index */
 
     /* card del shop */
-    
 
 
 
-    main>div>section>.card{
+
+    main>div>section>.card {
         width: 30%;
     }
 
     main>div>section>.card>picture>img {
         width: 100%;
     }
+
     /* Fin de card de shop */
 }
