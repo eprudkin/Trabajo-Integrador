@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="Estilos/Style.css">
+    <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div>
+            <picture>
+                <a href="../Index.html">
+                    <img class="logo" src="../multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
+            </picture>
+            <H3>FUNKOSHOP</H3>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="pages/Busqueda.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contact.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/login.html">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/cart.html">CART</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contact.html"> <img src="multimedia/icons/cart-icon.svg"
+                                    alt=""><!-- Logo del carrito -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<aside>
+    <form action="">
+
+<aside>
+    <H6>BUSCAR</H6>
+    <form action="/ruta-del-servidor" method="GET">
+       
+        
+        <input type="text" id="parametro" name="parametro" placeholder="Item o categoria">
+
+        <h6>ORDENAR POR</h6>
+        <select id="orden" name="orden">
+            <option value="menor-a-mayor">De menor a mayor</option>
+            <option value="mayor-a-menor">De mayor a menor</option>
+            <option value="nuevo-a-viejo">De más nuevo a más viejo</option>
+            <option value="viejo-a-nuevo">De más viejo a más nuevo</option>
+        </select>
+
+        <h6>PRECIO</h6>
+        <label for="precio-min">Mínimo:</label>
+        <input type="number" id="precio-min" name="precio-min" min="0" step="any">
+        <label for="precio-max">Máximo:</label>
+        <input type="number" id="precio-max" name="precio-max" min="0" step="any">
+
+        <h6>FILTRAR</h6>
+        <button type="button" id="filtro-nuevos">Nuevos</button>
+        <button type="button" id="filtro-ofertas">Ofertas</button>
+        <button type="button" id="filtro-edicion-especial">Edición Especial</button>
+        <button type="button" id="filtro-favoritos">Favoritos</button>
+
+        <button type="submit">Buscar</button>
+    </form>
+</aside>
+
+
+<P>NUEVO</P>
+<img src="multimedia/star-wars/trooper-1.webp" alt="">
+<P>STAR WARS</P>
+<p>STORMTROOPER LIGHTSABER</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+<P>NUEVO</P>
+<img src="multimedia/pokemon/pidgeotto-1.webp" alt="">
+<P>POKEMON</P>
+<p>PIDGEOTTO</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+<P>NUEVO</P>
+<img src="multimedia/harry-potter/luna-1.webp" alt="">
+<P>HARRY POTTER</P>
+<p>LUNA LOVEGOOD LION MASK</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+
+<P>NUEVO</P>
+<img src="multimedia/star-wars/trooper-1.webp" alt="">
+<P>STAR WARS</P>
+<p>STORMTROOPER LIGHTSABER</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+<P>NUEVO</P>
+<img src="multimedia/pokemon/pidgeotto-1.webp" alt="">
+<P>POKEMON</P>
+<p>PIDGEOTTO</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+<P>NUEVO</P>
+<img src="multimedia/harry-potter/luna-1.webp" alt="">
+<P>HARRY POTTER</P>
+<p>LUNA LOVEGOOD LION MASK</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+
+<P>NUEVO</P>
+<img src="multimedia/star-wars/trooper-1.webp" alt="">
+<P>STAR WARS</P>
+<p>STORMTROOPER LIGHTSABER</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+<P>NUEVO</P>
+<img src="multimedia/pokemon/pidgeotto-1.webp" alt="">
+<P>POKEMON</P>
+<p>PIDGEOTTO</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+
+<P>NUEVO</P>
+<img src="multimedia/harry-potter/luna-1.webp" alt="">
+<P>HARRY POTTER</P>
+<p>LUNA LOVEGOOD LION MASK</p>
+<p>$1799,99</p>
+<p>3 CUOTAS SIN INTERÉS</p>
+
+<div class="pagination">
+    <button class="active">1</button>
+    <button>2</button>
+    <a class="dots">...</a>
+    <button>9</button>
+    <button>10</button>
+</div>
+
+<footer>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
+                <li><a href="" class="nav_link">INGRESAR</a></li>
+                <li><a href="" class="nav_link">CONTACTO </a></li>
+            </ul>
+            <picture>
+                <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+            </picture>
+        </nav>
+    </section>
+        <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous">Boosrtrap</script>
+</body>
+</html>
