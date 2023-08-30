@@ -40,7 +40,14 @@ header>div>picture>a>.logo {
 .container {
     max-width:  100%;
 }
-
+ main>section>article>.divider {
+    
+    width: 70%;
+    height: 0.1rem;
+    border: 3px solid red;
+    border-radius: 20px;
+    margin: 15px;
+ }
 
 footer {
     width: 100%;
