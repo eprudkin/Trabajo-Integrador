@@ -14,6 +14,7 @@ a {
     text-decoration: none;
     color: var(--site-color-font);
 }
+
 header>nav {
     max-width: 1440px;
     min-height: fit-content;
@@ -99,6 +100,20 @@ footer>section {
         justify-content: center;
     }
 
+    /* Card item box-modeling */
+    main>section>.card {
+        width: 100%;
+        height: fit-content;
+    }
+
+    main>section>article>picture>img {
+        width: 100%;
+
+    }
+
+    main>section>picture>img {
+        width: 100%;
+    }
 
 }
 
@@ -129,7 +144,7 @@ footer>section {
         color: var(--site-color-font);
         background-color: var(--site-header);
     }
-    
+
     header>nav>div {
         display: flex;
         flex-direction: row-reverse;
@@ -140,7 +155,7 @@ footer>section {
     /* card del index */
     body>main>.card {
         width: 60%;
-        height: 350px;
+        height:fit-content;
         margin-left: 20%;
         margin-bottom: 15px;
         margin-top: 15px;
@@ -151,21 +166,18 @@ footer>section {
         height: max-content;
     }
 
-    body>main>.card>.card-img {
-        width: 50%;
-    }
 
-    body>main>.card>.card-img>img {
+    body>main>.card>.card-img-top>img {
         width: 100%;
     }
 
     /* Fin de card de index */
 
+
+
+
+
     /* card del shop */
-
-
-
-
     main>div>section>.card {
         width: 30%;
     }
@@ -175,4 +187,19 @@ footer>section {
     }
 
     /* Fin de card de shop */
+    main>.oportunidades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    main>section>.card{
+        width: 30%;
+    }
+
+    main>section>.card>picture>img {
+        width: 100%;
+    }
+
 }
