@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Estilos/Style.css">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../style/Style.css">
+    <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
+    <!-- Inicio de header -->
     <header>
-        <div>
-            <picture>
-                <a href="../Index.html">
-                    <img class="logo" src="../multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
-            </picture>
-            <H3>FUNKOSHOP</H3>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
-            <div class="container-fluid">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="pages/Busqueda.html">SHOP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/login.html">LOGIN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/cart.html">CART</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html"> <img src="multimedia/icons/cart-icon.svg"
-                                    alt=""><!-- Logo del carrito -->
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <picture>
+            <a href="../Index.html">
+                <img class="logo" src="../multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
+        </picture>
+        <H3>FUNKOSHOP</H3>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pages/Busqueda.html" class="nav_link">SHOP</a>
+                </li>
+                <li>
+                    <a href="pages/contac.html" class="nav_link">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="pages/login.html" class="nav_link">LOGIN</a>
+                </li>
+                <li>
+                    <a href="pages/cart.html" class="nav_link">CARRITO</a>
+                </li>
+                <li>
+                    <a href="cart.html" class="nav_link">
+                        <img src="multimedia/icons/cart-icon.svg" alt=""><!-- Logo del carrito -->
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
-
   
   
     <div id="search-container">
@@ -74,11 +65,11 @@
       <th>Categoría</th>
       <th>Acciones</th>
     </tr>
-    <!-- Aquí se generarán las filas de productos dinámicamente -->
+    
   </table>
   
   <form id="product-form">
-    <!-- ... (el resto de tu formulario) ... -->
+    
   </form>
   
   <script src="admin.js"></script>
@@ -98,24 +89,24 @@
   
   
   
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
-                    <li><a href="" class="nav_link">INGRESAR</a></li>
-                    <li><a href="" class="nav_link">CONTACTO </a></li>
-                </ul>
-                <picture>
-                    <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
-                </picture>
-            </nav>
-        </section>
-            <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous">Boosrtrap</script>
- 
+  <footer>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
+                <li><a href="" class="nav_link">INGRESAR</a></li>
+                <li><a href="" class="nav_link">LOGIN</a></li>
+                <li><a href="" class="nav_link">CONTACTO </a></li>
+            </ul>
+            <picture>
+                <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+            </picture>
+        </nav>
+    </section>
+    <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
+</footer>
+<!-- Fin de footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">Boosrtrap</script>
 </body>
 </html>
