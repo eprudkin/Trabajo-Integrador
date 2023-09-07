@@ -1,46 +1,45 @@
 :root {
-    --site-header : #383c46;
+    --site-header: #383c46;
     --site-main-background: #ffffff;
     --site-color-font: antiquewhite;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--site-color-font);
 }
 
-body>header {
+header>nav {
     max-width: 1440px;
     min-height: fit-content;
     color: var(--site-color-font);
     background-color: var(--site-header);
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
 }
-body>header>div {
-    margin: 15px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-body>header>div>picture>a>.logo {
+
+header>nav>div>picture>a>.logo {
     width: 50px;
 }
 
-body>.container {
+.container {
     max-width: 1440px;
 }
 
+main>section>article>.divider {
 
-body>footer {
+    width: 100%;
+    height: 0.1rem;
+    border: 3px solid red;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+footer {
     width: 100%;
     padding: 20px;
     color: var(--site-color-font);
@@ -51,111 +50,156 @@ body>footer {
     justify-content: center;
 }
 
-body>footer>section {
+footer>section {
     width: 100%;
 }
 
-.SHOP {
-    display: inline-block;
-    padding: 10px 80px;
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
- 
-
-
-body>footer>section>nav>picture>img {
-    width: 15%;
-}
 @media (max-width:1024px) {
 
 
-    body>main>.nuevos {
+    main>.nuevos {
         max-width: 1440px;
         height: fit-content;
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--site-color-font);
-        background-position:bottom center;
-        background-image: url(../multimedia/funkos-banner.webp);
         background-position: bottom center;
+        background-image: url(../multimedia/funkos-banner.webp);
     }
 
-    body>footer>section>nav {
-        width: 100%;
+    main>.card {
         display: flex;
         flex-direction: column;
-        justify-content: end;
     }
-    
 
-    body>footer>section>nav>ul {
-        list-style: none;
-        text-align: center;
-    }  
+    main>.card>.card-img>img {
+        width: 100%;
+    }
 
-    body>footer>section>nav>picture{
-        width: 30%;
+    main>section>.lanzamientos>.card>.card-img>img {
+        width: 50%;
+    }
+
+    main>div>aside {
+        display: none;
+    }
+
+
+    main>div>section>.card {
+        width: 100%;
+    }
+
+    main>div>section>.card>picture>img {
+        width: 100%;
+    }
+
+    main>.pagination>div {
         display: flex;
-        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
+
+    /* Card item box-modeling */
+    main>section>.card {
+        width: 100%;
+        height: fit-content;
+    }
+
+    main>section>article>picture>img {
+        width: 100%;
+
+    }
+
+    main>section>picture>img {
+        width: 100%;
+    }
+
 }
+
+
+
 @media (min-width:1024px) {
+
     body>main>.nuevos {
-        max-width: 1440px ;
+        max-width: 1440px;
         height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--site-color-font);
-        background-position:center center;
+        background-position: center center;
         background-image: url(../multimedia/funkos-banner.webp);
     }
-    body>main>.nuevos>article {       
+
+    body>main>.nuevos>article {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-        
-    
-}
 
-#search-input {
-    color: gray;}
+    header>nav {
+        max-width: 1440px;
+        min-height: fit-content;
+        color: var(--site-color-font);
+        background-color: var(--site-header);
+    }
 
-    table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-  
-      th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-      }
-  
-      .edit-icon, .delete-icon {
-        cursor: pointer;
-      }
-  
-      /* Estilos para el encabezado "Agregar" */
-      #add-header {
+    header>nav>div {
         display: flex;
-        align-items: center;
-      }
-  
-      #add-button {
-        background-color: red;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 24px;
-        margin-left: 10px;
-        cursor: pointer;
-      }
+        flex-direction: row-reverse;
+    }
+
+
+
+    /* card del index */
+    body>main>.card {
+        width: 60%;
+        height:fit-content;
+        margin-left: 20%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    body>main>.card>.card-body {
+        max-width: 75%;
+        height: max-content;
+    }
+
+
+    body>main>.card>.card-img-top>img {
+        width: 100%;
+    }
+
+    /* Fin de card de index */
+
+
+
+
+
+    /* card del shop */
+    main>div>section>.card {
+        width: 30%;
+    }
+
+    main>div>section>.card>picture>img {
+        width: 100%;
+    }
+
+    /* Fin de card de shop */
+    main>.oportunidades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    main>section>.card{
+        width: 30%;
+    }
+
+    main>section>.card>picture>img {
+        width: 100%;
+    }
+
+}

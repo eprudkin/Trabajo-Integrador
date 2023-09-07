@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="Estilos/Style.css">
     <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/Style.css">
+    <title>Home | Funkoshop</title>
 </head>
+
 <body>
+    <!-- Inicio de header -->
     <header>
-        <div>
-            <picture>
-                <a href="../Index.html">
-                    <img class="logo" src="../multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
-            </picture>
-            <H3>FUNKOSHOP</H3>
-        </div>
         <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
             <div class="container-fluid">
-
+                <picture>
+                    <a href="../Index.html">
+                        <img class="logo" src="../multimedia/branding/isotype.svg"
+                            alt="Imagen de la marca Funkoshop"></a>
+                </picture>
+                <H3>FUNKOSHOP</H3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -26,22 +29,22 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="pages/Busqueda.html">SHOP</a>
+                            <a class="nav-link" aria-current="page" href="../pages/shop.html">SHOP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html">CONTACTO</a>
+                            <a class="nav-link" href="../pages/contact.html">CONTACTO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/login.html">LOGIN</a>
+                            <a class="nav-link" href="../pages/login.html">LOGIN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/cart.html">CART</a>
+                            <a class="nav-link" href="../pages/cart.html">CART</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html"> <img src="multimedia/icons/cart-icon.svg"
-                                    alt=""><!-- Logo del carrito -->
+                            <a class="nav-link" href="../pages/contact.html"> <img
+                                    src="../multimedia/icons/cart-icon.svg" alt=""><!-- Logo del carrito -->
                             </a>
                         </li>
                     </ul>
@@ -50,74 +53,133 @@
         </nav>
     </header>
 
-    
 
-    <h1>Nuevos Ingresos</h1>
-    <p>Desubrí el próximo Funko Pop de tu colección</p>
-    <img src="multimedia/funkos-banner.webp" alt="">
-    <button>SHOP</button>
-    
-
-<h1>Star Wars & The Mandalorian</h1>
-<h5>Disfruta de una saga que sigue agregando personajes a su colección</h5>
-<img src="multimedia/star-wars/baby-yoda-1.webp" alt="">
-<button>Ver Colección</button>
-
-
-<h1>Pokemon Indigo</h1>
-<h5>Atrapa todos los que puedas y disfruta de una colección llena de amigos</h5>
-<img src="multimedia/pokemon/vulpix-1.webp" alt="">
-<button>Ver Colección</button>
-
-
-<h1>Harry Potter</h1>
-<h5>Revive los recuerdos de una saga llena de magia y encanto</h5>
-<img src="multimedia/harry-potter/snape-patronus-1.webp" alt="">
-<button>Ver Colección</button>
-
-
-<h1>ÚLTIMOS LANZAMIENTOS</h1>
-
-<P>NUEVO</P>
-<img src="multimedia/star-wars/trooper-1.webp" alt="">
-<P>STAR WARS</P>
-<p>STORMTROOPER LIGHTSABER</p>
-<p>$1799,99</p>
-<p>3 CUOTAS SIN INTERÉS</p>
-
-
-<P>NUEVO</P>
-<img src="multimedia/pokemon/pidgeotto-1.webp" alt="">
-<P>POKEMON</P>
-<p>PIDGEOTTO</p>
-<p>$1799,99</p>
-<p>3 CUOTAS SIN INTERÉS</p>
-
-
-<P>NUEVO</P>
-<img src="multimedia/harry-potter/luna-1.webp" alt="">
-<P>HARRY POTTER</P>
-<p>LUNA LOVEGOOD LION MASK</p>
-<p>$1799,99</p>
-<p>3 CUOTAS SIN INTERÉS</p>
-
-<footer>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
-                <li><a href="" class="nav_link">INGRESAR</a></li>
-                <li><a href="" class="nav_link">CONTACTO </a></li>
-            </ul>
-            <picture>
-                <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+    <!-- Fin de header -->
+    <main class="container">
+        <section class=" px-4 py-5 text-center nuevos"><!-- Inicio de BANNER -->
+            <article class="row flex-lg-row-reverse align-items-center">
+                <h3 class="display-5 fw-bold">Nuevos Ingresos</h3>
+                <p class="lead mb-4">Desubrí el próximo Funko Pop de tu colección</p>
+                <a href="pages/Busqueda.html"><button type="button"
+                        class="btn btn-dark btn-lg px-4 gap-3">SHOP</button></a>
+            </article>
+            <!-- LA imagen va de fondo -->
+        </section><!-- Fin de BANNER -->
+        <!-- Inicia catalog de muestra -->
+        <section class="card d-flex flex-row align-items-center justify-content-center">
+            <article class="card-body">
+                <h3 class="card-title">Star Wars & The Mandalorian</h3>
+                <p class="card-subtitle">Disfruta de una saga que sigue agregando personajes a su colección</p>
+                <div class="divider"></div>
+                <a href="pages/" class="btn btn-dark card-link">Ver Colección</a>
+            </article>
+            <picture class="card-img d-flex justify-content-start">
+                <img src="multimedia/star-wars/baby-yoda-1.webp"
+                    alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
             </picture>
-        </nav>
-    </section>
-        <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous">Boosrtrap</script>
+        </section>
+
+        <section class="card d-flex flex-row-reverse align-items-center justify-content-center">
+            <article class="card-body">
+                <h3 class="card-title">Pokemon Indigo</h3>
+                <p class="card-subtitle">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
+                <div class="divider"></div>
+                <a href="" class="btn btn-dark card-link">Ver Colección</a>
+            </article>
+            <picture class="card-img d-flex justify-content-start">
+                <img src="multimedia/pokemon/vulpix-1.webp"
+                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter.">
+            </picture>
+        </section>
+
+
+
+        <section class="card d-flex flex-row align-items-center justify-content-center">
+            <article class="card-body">
+                <h3 class="card-title">Harry Potter</h3>
+                <p class="card-subtitle">Revive los recuerdos de una saga llena de magia y encanto</p>
+                <div class="divider"></div>
+                <a href="" class="btn btn-dark card-link">Ver Colección</a>
+            </article>
+            <picture class="card-img d-flex justify-content-start">
+                <img src="multimedia/harry-potter/snape-patronus-1.webp"
+                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter.">
+            </picture>
+        </section>
+
+
+        <section>
+            <h2>ÚLTIMOS LANZAMIENTOS</h2>
+            <hr>
+            <div
+                class="d-flex flex-column flex-lg-row justify-content-between align-items-stretch px-4 py-5 text-center">
+                <section class="card">
+                    <a href="" class="card-link"></a>
+                    <picture class="card-img-top">
+                        <img src="multimedia/star-wars/trooper-1.webp" width="100%"
+                            alt="Figura coleccionable Funko de un StromTrooper.">
+                    </picture>
+                    <article class="card-body">
+                        <P class="card-text lead mb-4">STAR WARS</P>
+                        <h4 class="card-title display-5 fw-bold">STORMTROOPER LIGHTSABER</h4>
+                        <p class="card-text">$1799,99</p>
+                        <p class="card-text">3 CUOTAS SIN INTERÉS</p>
+                    </article>
+                </section>
+
+
+                <section class="card">
+
+                    <a href="" class="card-link"></a>
+                    <picture class="card-img">
+                        <img src="multimedia/pokemon/pidgeotto-1.webp" width="100%"
+                            alt="Figura coleccioable Fungo PIDGEOTTO">
+                    </picture>
+
+                    <article class="card-body">
+                        <P class="card-text lead mb-4">POKEMON</P>
+                        <h4 class="card-title display-5 fw-bold">PIDGEOTTO</h4>
+                        <p class="card-text">$1799,99</p>
+                        <p class="card-text">3 CUOTAS SIN INTERÉS</p>
+                    </article>
+                </section>
+
+
+                <section class="card">
+                    <a href="" class="card-link"></a>
+                    <picture class="card-img">
+                        <img src="multimedia/harry-potter/luna-1.webp" width="100%"
+                            alt="Figura coleccioable Funko de luna lovegoof">
+                    </picture>
+                    <article class="card-body">
+                        <P class="card-text  lead mb-4">HARRY POTTER</P>
+                        <h4 class="card-title display-5 fw-bold">LUNA LOVEGOOD LION MASK</h4>
+                        <p class="card-text">$1799,99</p>
+                        <p class="card-text">3 CUOTAS SIN INTERÉS</p>
+                    </article>
+                </section>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="d-flex flex-column justify-content-start align-items-center px-4 py-5">
+            <nav class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
+                <ul class="list-unstyled">
+                    <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
+                    <li><a href="" class="nav_link">INGRESAR</a></li>
+                    <li><a href="" class="nav_link">CONTACTO </a></li>
+                </ul>
+                <picture>
+                    <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+                </picture>
+            </nav>
+            <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">Boosrtrap</script>
 </body>
+
 </html>
