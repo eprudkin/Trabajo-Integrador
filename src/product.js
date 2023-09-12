@@ -1,4 +1,4 @@
-document.title = "Item";
+document.title = "Shop | Funkoshop";
 const contenedorD = document.getElementById('contenedorD');
 console.log(contenedorD);
 contenedorD.innerHTML= "<h1>Acá va la lista de articulos</h1>"

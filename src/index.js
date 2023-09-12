@@ -1,3 +1,5 @@
+document.title = "Home | Funkoshop"
+
 product = [
     {
         serie:"STAR WARS",
@@ -42,3 +44,4 @@ product = [
         img: "funko-img",
     }    
 ]
+console.log(product);
