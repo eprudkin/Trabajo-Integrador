@@ -56,8 +56,8 @@
     <main class="container">
         <div class="row">
             <aside class="col-lg-2">
-                <H6>BUSCAR</H6>
-                <form action="/ruta-del-servidor" method="GET">
+                <form action="/ruta-del-servidor" method="GET" class="input-group">
+                    <label class="form-label">BUSCAR</label>
                     <input type="text" id="parametro" name="parametro" placeholder="Item o categoria">
                     <h6>ORDENAR POR</h6>
                     <select id="orden" name="orden">
@@ -67,16 +67,25 @@
                         <option value="viejo-a-nuevo">De más viejo a más nuevo</option>
                     </select>
                     <h6>PRECIO</h6>
-                    <label for="precio-min">Mínimo:</label>
-                    <input type="number" id="precio-min" name="precio-min" min="0" step="any">
-                    <label for="precio-max">Máximo:</label>
-                    <input type="number" id="precio-max" name="precio-max" min="0" step="any">
-                    <h6>FILTRAR</h6>
-                    <button type="button" id="filtro-nuevos">Nuevos</button>
-                    <button type="button" id="filtro-ofertas">Ofertas</button>
-                    <button type="button" id="filtro-edicion-especial">Edición Especial</button>
-                    <button type="button" id="filtro-favoritos">Favoritos</button>
-                    <button type="submit">Buscar</button>
+                    <div class="input-group">
+                        <label for="precio-min" class="form-label">Mínimo:</label>
+                        <input type="number" id="precio-min" name="precio-min" min="0" step="any">
+                        <label for="precio-max" class="form-label">Máximo:</label>
+                        <input type="number" id="precio-max" name="precio-max" min="0" step="any">
+                    </div>
+                    
+                    <div class="row flex-column">
+                        <div class="col-1 btn-group my-2">
+                            <button type="button" class="btn btn-sm btn-group-lg btn-dark" id="filtro-nuevos">Nuevos</button>
+                            <button type="button" class="btn btn-sm btn-group-lg btn-dark" id="filtro-ofertas">Ofertas</button>
+                        </div>
+                        <div class="col-1 btn-group my-2">
+                            <button type="button" class="btn btn-sm btn-group-lg btn-dark" id="filtro-edicion-especial">Especial</button>
+                            <button type="button" class="btn btn-sm  btn-group-lg btn-dark" id="filtro-favoritos">Favoritos</button>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-sm btn-success">Buscar</button>
+                        </div>
                 </form>
             </aside>
             <section class="col-lg-10  col-12 d-flex flex-row flex-wrap justify-content-evenly py-3">
