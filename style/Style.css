@@ -29,6 +29,16 @@ header>nav>div>picture>a>.logo {
 .container {
     max-width: 1440px;
 }
+main>.formulario {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 
 main>section>article>.divider {
 
@@ -121,7 +131,7 @@ footer>section {
 
 @media (min-width:1024px) {
 
-    body>main>.nuevos {
+    main>.nuevos {
         max-width: 1440px;
         height: 400px;
         background-size: cover;
@@ -131,7 +141,28 @@ footer>section {
         background-image: url(../multimedia/funkos-banner.webp);
     }
 
-    body>main>.nuevos>article {
+    main>.formulario>form {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;   
+    }
+    main>.formulario>form>fieldset {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main>.formulario>form>.datos {
+        border: 3px black solid;
+        
+    }
+
+    main>.nuevos>article {
         display: flex;
         flex-direction: column;
         align-items: center;
