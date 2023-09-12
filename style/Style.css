@@ -138,16 +138,24 @@ footer>section {
         background-repeat: no-repeat;
         color: var(--site-color-font);
         background-position: center center;
-        background-image: url(../multimedia/funkos-banner.webp);
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(2, 2, 2, 0.5)), url(../multimedia/funkos-banner.webp);
+    }
+
+      .formulario>form {
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(2, 2, 2, 0.5)), url(../multimedia/funkos-banner.webp);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
     }
 
     main>.formulario>form {
-        width: 100%;
+       /*  width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;   
+        justify-content: space-around; */
     }
     main>.formulario>form>fieldset {
         width: fit-content;

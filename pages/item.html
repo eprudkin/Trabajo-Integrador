@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/Style.css">
-    <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/octoface.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Item</title>
+    <title></title>
 </head>
 
 <body>
@@ -55,11 +55,14 @@
 
     <!-- Fin de header -->
     <main class="container">
+        <section id="contenedorD">
+            <!-- Lista dinámica -->
+        </section>
         <!-- Articulos para la venta -->
         <!-- Articulo seleccionado -->
         <section class="card d-flex flex-md-row justify-content-around align-items-baseline">
             <picture class="card-img-top">
-                <img src="../multimedia/star-wars/baby-yoda-1.webp" alt="">
+                <img src="../multimedia/star-wars/baby-yoda-1.webp" alt="Figura funko de babyu yoda">
             </picture>
             <article class="card-body">
                 <p class="card-text text-body-secondary">STAR WARS</p>
@@ -68,9 +71,6 @@
                     limitada</p>
                 <p class="card-text">$ 1799,99</p>
                 <form action="" class="stock" method="get">
-                    <label for="number" name="numbre"><input type="number" class="quantity-input" id="quantity" value="0" width="30px"></label>
-                    <label for="button" name="button"><button class="quantity-button" id="increase" type="button">+</button></label>
-                    <label for="button" name="button"><button class="quantity-button" id="decrease" type="button">-</button></label>
                     <label for="submit" name="submit"><button class=" btn btn-dark btn-group " type="submit">Agregar al Carrito</button></label>
                 </form>
                 <p class="card-text text-info">3 CUOTAS SIN INTERÉS</p>
@@ -89,6 +89,9 @@
                     <h3 class="card-title">STORMTROOPER LIGHTSABER</h3>
                     <P class="card-subtitle text-body-secondary">STAR WARS</P>
                     <p class="card-text">$1799,99</p>
+                    <form action="" class="stock" method="get">
+                        <label for="submit" name="submit"><button class=" btn btn-dark btn-group " type="submit">Agregar al Carrito</button></label>
+                    </form>
                     <p class="card-text text-info">3 CUOTAS SIN INTERÉS</p>
                 </div>
             </article>
@@ -101,6 +104,9 @@
                         <h3 class=" card-title">PIDGEOTTO</h3>
                     <P class="card-subtitle text-body-secondary">POKEMON</P>
                     <p class="cad-text">$1799,99</p>
+                    <form action="" class="stock" method="get">
+                        <label for="submit" name="submit"><button class=" btn btn-dark btn-group " type="submit">Agregar al Carrito</button></label>
+                    </form>
                     <p class="cad-text text-info">3 CUOTAS SIN INTERÉS</p>
                 </div>
             </article>
@@ -113,6 +119,9 @@
                         <h3 class=" card-title">LUNA LOVEGOOD LION MASK</h3>
                     <P class="card-subtitle text-body-secondary">HARRY POTTER</P>
                     <p class="cad-text">$1799,99</p>
+                    <form action="" class="stock" method="get">
+                        <label for="submit" name="submit"><button class=" btn btn-dark btn-group " type="submit">Agregar al Carrito</button></label>
+                    </form>
                     <p class="cad-text text-info">3 CUOTAS SIN INTERÉS</p>
                 </div>
             </article>
@@ -137,6 +146,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous">Boosrtrap</script>
+        <script src="../src/product.js"></script>
 </body>
 
 </html>
