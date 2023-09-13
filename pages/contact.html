@@ -51,9 +51,9 @@
 
 <!-- Fin de header -->
 <main>
-    <section class="formulario row mb-3">
+    <section class="formulario row mb-5">
         <h1 class="col-8">Contacto</h1>
-        <form method="post" action="http://demo-registro.com.ar" id="survey-form" class="col-8 shadow-lg d-flex flex-column align-items-center text-white bg-dark rounded-2 h-100">
+        <form method="post" action="http://demo-registro.com.ar" id="survey-form" class="col-8 shadow-lg d-flex flex-column align-items-center text-white bg-dark rounded-4 pb-3 h-100">
             <fieldset class="d-flex flex-column justify-content-around align-items-center align-text-center w-50 m-1 p-3">
                 <label id="name-label" for="first-name">Nombre:</label><input id="first-name" name="first-name" type="text" class="form-control"
                         placeholder="Nombre completo" required>
@@ -62,8 +62,8 @@
             </fieldset>
             <fieldset class="w-50 p-2 m-1">
                 <label for="referrer">Elija una opción
-                    <select name="dropdown" id="dropdown">
-                        <option value="">Elija una opción</option>
+                    <select name="dropdown" id="dropdown" class="form-select form-select-sm" aria-label="Multiple select example">
+                        <option selected>Elija una opción</option>
                         <option value="1">Comentario</option>
                         <option value="2">Prooveedores</option>
                         <option value="3">Cliente</option>
@@ -76,10 +76,10 @@
                     <textarea name="bio" class="w-100 form-control" id="bio" cols="30" rows="10" placeholder="Dejenos su comentario..."></textarea>
                 </label>
             </fieldset>
-            <fieldset class="p-2 m-1 w-50">
+            <fieldset class="p-2 m-1 w-100 form-check">
                 <label>Desea recibir notificaciones y ofertas?</label>
-                <label for="Definitely">Definitivamente si!</label><input id="Definitely" type="radio" name="account-type" value="Definitely" class="inline">
-                <label for="not sure">No estoy seguro</label><input id="not sure" type="radio" name="account-type" value="not sure" class="inline">
+                <label for="Definitely" class="form-check-label">Definitivamente si!</label><input id="Definitely" type="radio" name="account-type" value="Definitely" class="inline form-check-input">
+                <label for="not sure" class="form-check-label">No estoy seguro</label><input id="not sure" type="radio" name="account-type" value="not sure" class="inline form-check-input"">
             </fieldset>
             <input type="submit" value="Enviar" id="submit" class="btn btn-dark">
         </form>
