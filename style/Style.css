@@ -29,7 +29,31 @@ header>nav>div>picture>a>.logo {
 .container {
     max-width: 1440px;
 }
-main>.formulario {
+
+.bandeja {
+    width: 100%;
+    height: fit-content;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(2, 2, 2, 0.5)),  url(../multimedia/funkos-banner.webp);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+
+.bandeja>.listaBandeja {
+    width: 95%;
+    height: fit-content;
+    border-radius: 30px;
+    height: fit-content;
+    border: 3px solid white;
+    background-color: var(--site-main-background);
+}
+
+
+.formulario {
+    
     width: 100%;
     height: fit-content;
     display: flex;
@@ -37,7 +61,6 @@ main>.formulario {
     align-items: center;
     justify-content: space-around;
 }
-
 
 
 main>section>article>.divider {
