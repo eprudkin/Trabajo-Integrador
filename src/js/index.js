@@ -1,6 +1,8 @@
-document.title = "Home | Funkoshop"
+document.title = "Home | Funkoshop";
 
-product = [
+export let saludar = "Hola";
+
+const product = [
     {
         serie:"STAR WARS",
         modelo:"Baby yoda blueball",
@@ -44,4 +46,4 @@ product = [
         img: "funko-img",
     }    
 ]
-console.log(product);
+
