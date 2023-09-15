@@ -37,19 +37,17 @@ header>nav>div>picture>a>.logo {
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30px;
-    padding: 15px;
+    padding: 5px;
 }
 
 
 .bandeja>.listaBandeja {
-    width: 95%;
-    height: fit-content;
-    border-radius: 30px;
+    width: 100%;
     height: fit-content;
     border: 3px solid white;
     background-color: var(--site-main-background);
 }
+
 
 
 .formulario {
@@ -98,6 +96,20 @@ footer>section {
         color: var(--site-color-font);
         background-position: bottom center;
         background-image: url(../multimedia/funkos-banner.webp);
+    }
+    .bandeja>.listaBandeja>.tarjeta {
+        width: 50%;
+        height: 25%;
+        border: 3px solid black;
+        border-radius: 25px;
+        margin: 3px 0px;
+        padding: 4px;
+    }
+
+ 
+
+    .bandeja>.listaBandeja>article>article>picture>img {
+        width: 25%;
     }
 
     main>.card {
@@ -163,6 +175,20 @@ footer>section {
         background-position: center center;
         background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(2, 2, 2, 0.5)), url(../multimedia/funkos-banner.webp);
     }
+    .bandeja>.listaBandeja>.tarjeta {
+        width: 100%;
+        height: fit-content;
+        border: 3px solid black;
+        border-radius: 25px;
+        margin: 3px 0px;
+        padding: 2px;
+    }
+    .bandeja>.listaBandeja>.tarjeta>picture>img {
+        height: fit-content;
+        width: 50%;
+        
+    }
+    
 
       .formulario>form {
         background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(2, 2, 2, 0.5)), url(../multimedia/funkos-banner.webp);

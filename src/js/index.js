@@ -2,7 +2,7 @@ document.title = "Home | Funkoshop";
 
 export let saludar = "Hola";
 
-const product = [
+/* const product = [
     {
         serie:"STAR WARS",
         modelo:"Baby yoda blueball",
@@ -45,5 +45,5 @@ const product = [
         precio:2000,
         img: "funko-img",
     }    
-]
+] */
 
