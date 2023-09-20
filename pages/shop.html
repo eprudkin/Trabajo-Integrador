@@ -56,7 +56,7 @@
     <main class="container">
         <div class="row">
             <aside class="col-lg-2">
-                <form action="/ruta-del-servidor" method="GET" class="input-group">
+                <form class="input-group">
                     <label class="form-label">BUSCAR</label>
                     <input type="text" id="parametro" name="parametro" placeholder="Item o categoria" class="text-center">
                     <h6>ORDENAR POR</h6>
@@ -86,17 +86,17 @@
                             <button type="button" class="btn btn-sm  btn-group-lg btn-dark" id="filtro-favoritos">Favoritos</button>
                         </div>
                         <div class="row">
-                            <button type="submit" class="btn btn-sm btn-success">Buscar</button>
+                            <button type="submit" id="btnBuscar" class="btn btn-sm btn-success">Buscar</button>
                         </div>
                 </form>
             </aside>
-            <section id="contenedorD" class="col-lg-10  col-12 d-flex flex-row flex-wrap justify-content-evenly py-3">
+            <section id="bandeja" class="col-lg-10  col-12 d-flex flex-row flex-wrap justify-content-evenly py-3">
           
             </section>
             </div>
             <div class="pagination row d-flex flex-row justify-content-evenly m-3">
-                <button class="btn btn-primary w-10 col-1"><</button>
-                <button class="btn btn-primary w-10 col-1">></button>
+                <button id="back" class="btn btn-primary w-10 col-1"><</button>
+                <button id="next" class="btn btn-primary w-10 col-1">></button>
             </div>
         </section>
     </main>
@@ -119,7 +119,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous">Boosrtrap</script>
-    <script src="../src/js/shop.js" type="module"></script>
+    <script src="../src/module/shop.js" type="module"></script>
 </body>
 
 </html>

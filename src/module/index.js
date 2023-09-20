@@ -1,14 +1,13 @@
-document.title = "Home | Funkoshop";
 
-export let saludar = "Hola";
 
-/* const product = [
+ 
+const product = [
     {
-        serie:"STAR WARS",
-        modelo:"Baby yoda blueball",
+        serie : "STAR WARS",
+        modelo : "Baby yoda blueball",
         descripcion: "Figura coleccionable de baby yoda (Grogu) - The Mandalorian saga, edicion limitada",
-        precio:2000,
-        img: "funko-img",
+        precio : 1500,
+        img : "funko-img",
     },
     {
         serie:"STAR WARS",
@@ -45,5 +44,4 @@ export let saludar = "Hola";
         precio:2000,
         img: "funko-img",
     }    
-] */
-
+]

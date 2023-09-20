@@ -1,7 +1,7 @@
 document.title = "Producto | Funkoshop";
 
 
-/* function crearHtml(array) {
+function crearHtml(array) {
     for (const item of array) {
 
         let html = "";
@@ -31,4 +31,4 @@ document.title = "Producto | Funkoshop";
     const arrayBotones = document.querySelectorAll(".btnAdd");
     console.log(arrayBotones);
 
-} */
+}
