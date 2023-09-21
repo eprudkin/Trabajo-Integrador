@@ -1,6 +1,6 @@
 //Algoritmo de ordenamiento quicksort
 
-function quicksort(datos) {
+export function quicksort(datos) {
     
     if (datos.length <= 1) {
         return datos

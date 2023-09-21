@@ -1,6 +1,3 @@
-
-
- 
 const product = [
     {
         serie : "STAR WARS",
