@@ -1,42 +1,28 @@
-import {  infoFunkos } from './shop.js'
-import { crearHtml } from './crearhtml.js'
+import { crearCart } from "./crearhtml.js";
+import { infoFunkos } from "./funkos.js";
 
 document.title = "Cart | Funkoshop";
 
 const bandeja = document.getElementById('bandeja');
+const harrypotter = infoFunkos.harrypotter, pokemon = infoFunkos.pokemon, starwars = infoFunkos.starwars;
 
+function filtradoFunko(filtro) {
+    let filtrado = starwars.filter((el) => {
+        return el.modelo.includes(filtro);
+    });
+    return filtrado;
+}
 
-
-/* function crearHtml(array) {
-    for (const item of array) {
-  
-      let html = "";
-      //destructuring
-      const {id , modelo, descripcion, precio, img } = item;
-      html =
-        `
-       
-        <div class="card shadow-lg my-3" style="width: 18rem;">
-        <img src="../multimedia${img}" class="card-img-top" alt="${descripcion}">
-        <div class="card-body">
-            <h5 class="card-title text-center">${modelo}</h5>
-            <p class="card-text">${descripcion}</p>
-            <p class="card-text text-info">$${precio}</p>
-            <a href="#" id="${id}" class="btn btn-primary">Eliminar</a>
-        </div>
-    </div>
-              `;
-      bandeja.innerHTML += html;
-    }
-  
-} */
+console.log(filtradoFunko("Baby yoda blueball"));
 
 setTimeout(() => {
-  crearHtml(infoFunkos.harrypotter);
-  crearHtml(infoFunkos.pokemon);
-  crearHtml(infoFunkos.starwars);
-  crearHtml(infoFunkos.harrypotter);
-  crearHtml(infoFunkos.starwars);
-}, 3000);
-
-
+  bandeja.innerHTML = '<H1 class="text-light">Cargando...</H1>';
+  setTimeout(() => {
+    bandeja.innerHTML = "";
+    setTimeout(() => {
+      crearCart(harrypotter);
+    crearCart(pokemon);
+    crearCart(starwars);
+    }, 100);
+  },2900);
+}, 500);
