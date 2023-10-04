@@ -56,24 +56,19 @@
     <main class="container">
         <div class="row">
             <aside class="col-lg-2">
-                <form class="input-group">
+                <form class="input-group" id="myForm">
                     <label class="form-label">BUSCAR</label>
                     <input type="text" id="parametro" name="parametro" placeholder="Item o categoria" class="text-center">
-                    <h6>ORDENAR POR</h6>
-                   <div>                       
-                        <select id="orden" name="orden" class="form-select" aria-label="Default select example">
-                            <option value="menor-a-mayor">De menor a mayor</option>
-                            <option value="mayor-a-menor">De mayor a menor</option>
-                            <option value="nuevo-a-viejo">De más nuevo a más viejo</option>
-                            <option value="viejo-a-nuevo">De más viejo a más nuevo</option>
-                        </select>
+                   <div class="">                       
+                       <label id="orden" name="orden" class="text-center my-2" aria-label="Default select example">Ordenar por:</label>
+                       <div class="btn-group">
+                            <button id="menor-a-mayor" class="btn btn-sm btn-group-lg btn-info w-50">menor a mayor</button>
+                            <button id="mayor-a-menor" class="btn btn-sm btn-group-lg btn-info w-50">mayor a menor</button>
+                        </div>
                    </div>
-                    <h6>PRECIO</h6>
                     <div class="input-group">
-                        <label for="precio-min" class="form-label">Mínimo:</label>
+                        <label for="precio-min" class="form-label">Precio:</label>
                         <input type="number" id="precio-min" name="precio-min" min="0" step="any" width="100%">
-                        <label for="precio-max" class="form-label">Máximo:</label>
-                        <input type="number" id="precio-max" name="precio-max" min="0" step="any" width="100%">
                     </div>
                     
                     <div class="row flex-column align-items-center">
@@ -88,6 +83,10 @@
                         <div class="row">
                             <button type="submit" id="btnBuscar" class="btn btn-sm btn-success">Buscar</button>
                         </div>
+                        <div class="row">
+                            <button type="submit" id="btnVer" class="btn btn-sm btn-success my-2">Ver Catálogo</button>
+                        </div>
+                    </div>
                 </form>
             </aside>
             <section id="bandeja" class="col-lg-10  col-12 d-flex flex-row flex-wrap justify-content-evenly py-3">
@@ -98,6 +97,7 @@
                 <button id="back" class="btn btn-primary w-10 col-1"><</button>
                 <button id="next" class="btn btn-primary w-10 col-1">></button>
             </div>
+            
         </section>
     </main>
             

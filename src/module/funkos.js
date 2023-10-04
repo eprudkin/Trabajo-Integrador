@@ -1,16 +1,15 @@
-export const infoFunkos = {
-
-
-    'starwars': [
+export const infoFunkos = [
         {
+            id: 1,
             serie: "STAR WARS",
-            modelo: "Baby yoda blueball",
+            modelo: "Baby yoda",
             descripcion: "Figura coleccionable de baby yoda (Grogu) - The Mandalorian saga, edicion limitada",
             precio: 5200,
             img: "/star-wars/baby-yoda-1.webp",
             img2: "/star-wars/baby-yoda-box.webp"
         },
         {
+            id: 2,
             serie: "STAR WARS",
             modelo: "Bobbafeth",
             descripcion: "Figura coleccionable de Bobbafeth - The Mandalorian saga, edicion limitada",
@@ -19,6 +18,7 @@ export const infoFunkos = {
             img2: "/star-wars/bobbafeth-box.webp"
         },
         {
+            id: 3,
             serie: "STAR WARS",
             modelo: "Luke",
             descripcion: "Figura coleccionable de Luke - The Mandalorian saga, edicion limitada",
@@ -27,16 +27,16 @@ export const infoFunkos = {
             alt: "/star-wars/luke-box  .webp"
         },
         {
+            id: 4,
             serie: "STAR WARS",
             modelo: "Stromtrooper lightsaber",
             descripcion: "Figura coleccionable de stormtrooper lightsaber - The mandalorian saga.",
             precio: 3000,
             img: "/star-wars/trooper-1.webp",
             img2: "/star-wars/trooper-box.webp"
-        }
-    ],
-    'harrypotter': [
+        },
         {
+            id: 5,
             serie: "HARRY POTTER",
             modelo: "Luna lovegood lion mask",
             descripcion: "Figura coleccionable de Luna lovegood de la película Harry potter.",
@@ -45,6 +45,7 @@ export const infoFunkos = {
             img2: "/harry-potter/luna-box.webp"
         },
         {
+            id: 6,
             serie: "HARRY POTTER",
             modelo: "Patronus de snape",
             descripcion: "Figura coleccionable Funko de patronus de snape de la película Harry potter.",
@@ -53,6 +54,7 @@ export const infoFunkos = {
             img2: "/harry-potter/snape-patronus-box.webp"
         },
         {
+            id: 7,
             serie: "HARRY POTTER",
             modelo: "Hermione",
             descripcion: "Figura coleccionable Funko de Hermione de la película Harry potter.",
@@ -61,16 +63,16 @@ export const infoFunkos = {
             img2: "/harry-potter/Hermione-box.webp"
         },
         {
+            id: 8,
             serie: "HARRY POTTER",
             modelo: "Harry Potter",
             descripcion: "Figura coleccionable Funko de Harry Potter de la película Harry potter.",
             precio: 4500,
             img: "/harry-potter/harry-1.webp",
             img2: "/harry-potter/harry-box.webp"
-        }
-    ],
-    'pokemon': [
-        {
+        },
+        {          
+            id: 9,
             serie: "POKEMON",
             modelo: "Pidgeotto",
             descripcion: "Figura coleccionable de Pidgeotto de la serie POKEMON.",
@@ -79,6 +81,7 @@ export const infoFunkos = {
             img2: "/pokemon/pidgeotto-box.webp"
         },
         {
+            id: 10,
             serie: "POKEMON Indigo",
             modelo: "Vulpix",
             descripcion: "Figura coleccionable de Vulpix de la serie de Pokemón Indigo.",
@@ -88,6 +91,7 @@ export const infoFunkos = {
 
         },
         {
+            id: 11,
             serie: "POKEMON Indigo",
             modelo: "Charmander",
             descripcion: "Figura coleccionable de Charmander de la serie de Pokemón Indigo.",
@@ -96,6 +100,7 @@ export const infoFunkos = {
             img2: "/pokemon/charmander-box.webp"
         },
         {
+            id: 12,
             serie: "POKEMON Indigo",
             modelo: "Dragonite",
             descripcion: "Figura coleccionable de Dragonite de la serie de Pokemón Indigo.",
@@ -104,6 +109,7 @@ export const infoFunkos = {
             img2: "/pokemon/dragonite-box.webp"
         },
         {
+            id: 13,
             serie: "POKEMON Indigo",
             modelo: "Pikachu",
             descripcion: "Figura coleccionable de Pikachu de la serie de Pokemón Indigo.",
@@ -111,5 +117,5 @@ export const infoFunkos = {
             img: "/pokemon/pikachu-1.webp",
             img2: "/pokemon/pikachu-box.webp"
         }
+    
     ]
-}

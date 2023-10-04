@@ -34,6 +34,11 @@ export function MayorDeTodos(n1, n2, n3) {
     }
 }
 
+export function guardarEnstorage(encontrado) {
+    return localStorage.setItem('cart', JSON.stringify(encontrado))
+}
+
+
 //numero primo
 /* let esPrimo = true;
 let numero = parent(prompt('Ingrese un número'))

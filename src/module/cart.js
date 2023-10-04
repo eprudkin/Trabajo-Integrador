@@ -7,18 +7,20 @@ document.title = "Cart | Funkoshop";
 const bandeja = document.getElementById('bandeja');
 const harrypotter = infoFunkos.harrypotter, pokemon = infoFunkos.pokemon, starwars = infoFunkos.starwars;
 const tagArray = document.getElementsByTagName('span'), promo = document.getElementById('promoCode');
-let a = pokemon[0].precio, b = pokemon[1].precio, c = pokemon[2].precio, d = pokemon[3].precio, e = pokemon[4].precio;
 
 
-let cantidadCart = tagArray[2].innerText;
-let cantidadPric = tagArray[3].innerText;
+
+let cantidadCart = arrPrecios(pokemon);
 let cantidadDisc = tagArray[4].innerText;
 let promoCode = promo.innerText;
-console.log(cantidadCart);
-console.log(cantidadPric);
+
+console.log(cantidadCart.length);
 console.log(cantidadDisc);
 console.log(promoCode);
 
+
+
+console.log();
 console.log("Ud. tiene como monto los valores: " + arrPrecios(harrypotter));
 console.log("La suma de los funkos es " + sumarPrecio(harrypotter));
 console.log("______________________________________________________");
@@ -43,6 +45,13 @@ setTimeout(() => {
     }, 100);
   }, 2900);
 }, 500);
+
+if (cantidadCart.length >= 0) {
+  console.log("hay " + cantidadCart.length + " objetos");
+} else {
+  console.log("no hay");
+}
+
 
 /* 
 //contador en resta
