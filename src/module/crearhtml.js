@@ -119,3 +119,20 @@ export function crearCard(encontrado) {
       console.log("estoy agregando al carrito");
     });
 }
+
+export function crearlistCard (selected) {
+  let html = "";
+  const { id, codigo, modelo, serie } = encontrado;
+    html = `
+    <article class="card w-100 d-flex flex-row justify-content-evenly">
+    <p class="fw-bold ident card-header">${id}</p>
+    <p class="code card-text">${codigo}</p>
+    <p class="name card-text">${modelo}</p>
+    <p class="category card-header">${serie}</p>
+    <div class="card-footer d-flex flex-row align-items-center justify-content-around">
+        <button class="btn" id="edit"><img src="../multimedia/icons/edit_pencil.svg" alt=""></button>
+        <button class="btn" id="delete"><img src="../multimedia/icons/delete_trash.svg" alt=""></button>
+    </div>
+    `;
+    bandeja.innerHTML += html;
+}

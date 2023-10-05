@@ -1,6 +1,7 @@
 export const infoFunkos = [
         {
             id: 1,
+            codigo:"STW001001",
             serie: "STAR WARS",
             modelo: "Baby yoda",
             descripcion: "Figura coleccionable de baby yoda (Grogu) - The Mandalorian saga, edicion limitada",
@@ -10,6 +11,7 @@ export const infoFunkos = [
         },
         {
             id: 2,
+            codigo:"STW001002",
             serie: "STAR WARS",
             modelo: "Bobbafeth",
             descripcion: "Figura coleccionable de Bobbafeth - The Mandalorian saga, edicion limitada",
@@ -19,6 +21,7 @@ export const infoFunkos = [
         },
         {
             id: 3,
+            codigo:"STW001003",
             serie: "STAR WARS",
             modelo: "Luke",
             descripcion: "Figura coleccionable de Luke - The Mandalorian saga, edicion limitada",
@@ -28,6 +31,7 @@ export const infoFunkos = [
         },
         {
             id: 4,
+            codigo:"STW001004",
             serie: "STAR WARS",
             modelo: "Stromtrooper lightsaber",
             descripcion: "Figura coleccionable de stormtrooper lightsaber - The mandalorian saga.",
@@ -37,6 +41,7 @@ export const infoFunkos = [
         },
         {
             id: 5,
+            codigo:"HPT001001",
             serie: "HARRY POTTER",
             modelo: "Luna lovegood lion mask",
             descripcion: "Figura coleccionable de Luna lovegood de la película Harry potter.",
@@ -46,6 +51,7 @@ export const infoFunkos = [
         },
         {
             id: 6,
+            codigo:"HPT001002",
             serie: "HARRY POTTER",
             modelo: "Patronus de snape",
             descripcion: "Figura coleccionable Funko de patronus de snape de la película Harry potter.",
@@ -55,6 +61,7 @@ export const infoFunkos = [
         },
         {
             id: 7,
+            codigo:"HPT001003",
             serie: "HARRY POTTER",
             modelo: "Hermione",
             descripcion: "Figura coleccionable Funko de Hermione de la película Harry potter.",
@@ -64,6 +71,7 @@ export const infoFunkos = [
         },
         {
             id: 8,
+            codigo:"HPT001004",
             serie: "HARRY POTTER",
             modelo: "Harry Potter",
             descripcion: "Figura coleccionable Funko de Harry Potter de la película Harry potter.",
@@ -73,8 +81,9 @@ export const infoFunkos = [
         },
         {          
             id: 9,
+            codigo:"PKM001001",
             serie: "POKEMON",
-            modelo: "Pidgeotto",
+            modelo: "Pidgeotto Flying",
             descripcion: "Figura coleccionable de Pidgeotto de la serie POKEMON.",
             precio: 6000,
             img: "/pokemon/pidgeotto-1.webp",
@@ -82,8 +91,9 @@ export const infoFunkos = [
         },
         {
             id: 10,
+            codigo:"PKM001002",
             serie: "POKEMON Indigo",
-            modelo: "Vulpix",
+            modelo: "Vulpix Fancy",
             descripcion: "Figura coleccionable de Vulpix de la serie de Pokemón Indigo.",
             precio: 5500,
             img: "/pokemon/vulpix-1.webp",
@@ -92,8 +102,9 @@ export const infoFunkos = [
         },
         {
             id: 11,
+            codigo:"PKM001003",
             serie: "POKEMON Indigo",
-            modelo: "Charmander",
+            modelo: "Charmander Smiley",
             descripcion: "Figura coleccionable de Charmander de la serie de Pokemón Indigo.",
             precio: 7500,
             img: "/pokemon/charmander-1.webp",
@@ -101,8 +112,9 @@ export const infoFunkos = [
         },
         {
             id: 12,
+            codigo:"PKM001004",
             serie: "POKEMON Indigo",
-            modelo: "Dragonite",
+            modelo: "Dragonite Hi!",
             descripcion: "Figura coleccionable de Dragonite de la serie de Pokemón Indigo.",
             precio: 4000,
             img: "/pokemon/dragonite-1.webp",
@@ -110,8 +122,9 @@ export const infoFunkos = [
         },
         {
             id: 13,
+            codigo:"PKM001005",
             serie: "POKEMON Indigo",
-            modelo: "Pikachu",
+            modelo: "Pikachu Smiley",
             descripcion: "Figura coleccionable de Pikachu de la serie de Pokemón Indigo.",
             precio: 8000,
             img: "/pokemon/pikachu-1.webp",
