@@ -54,4 +54,7 @@ function filtradoFunko(arr, filtro) {
     return filtrado;
 } 
 
-export const carrito = localStorage.getItem('cart');
+
+
+
+

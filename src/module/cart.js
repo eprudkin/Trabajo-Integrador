@@ -1,45 +1,52 @@
-import { crearCart } from "./crearhtml.js";
-import { sumarPrecio, arrPrecios } from "./aritmetica.js";
-import { infoFunkos } from "./funkos.js";
-import { FunkosObj } from "./FunkosObj.js";
-import { carrito } from "./funciones.js"
+import {  crearCart } from "./crearhtml.js";
+import { sumarPrecio } from "./aritmetica.js";
+//Este modulo esta listo para presentar, no hay que corregir nada, por el momento
+document.title = "Cart | Funkoshop";//Asigna un título al HTML de forma dinámica
+
+const bandeja = document.getElementById('bandeja');//trae el SECTION con el id="bandeja".
+
+//Lista de elemento que traigo del HTML para asignarles valores distintos después.
+const tagArray = document.getElementsByTagName('span'), promo = document.getElementById('promoCode'), total = document.getElementById('totalDolares'),
+cantObj = document.getElementById('cantObj');
 
 
-document.title = "Cart | Funkoshop";
-
-
-const bandeja = document.getElementById('bandeja');
-const harrypotter = FunkosObj.harrypotter, pokemon = FunkosObj.pokemon, starwars = FunkosObj.starwars;
-const tagArray = document.getElementsByTagName('span'), promo = document.getElementById('promoCode'), total = document.getElementById('totalDolares');
-let seleccionados = JSON.parse(carrito);
-
-
-let cantidadCart = arrPrecios(infoFunkos);
-let cantidadDisc = tagArray[4].innerText;
-let promoCode = promo.innerText;
-
-
-const valorAPagar = sumarPrecio(seleccionados)
-
-let p = document.createElement('p');
-p.innerText = valorAPagar;
+const carrito = localStorage.getItem('cart');//Trae del localStorage en forma de string el array de objetos que fueron enviados desde el shop
+let seleccionados = JSON.parse(carrito);//Convierte en objetos el string de la variable carrito.
 
 
 
-console.log(cantidadCart.length);
-console.log(cantidadDisc);
+let disc = tagArray[4].innerText;//Valor de descuento a aplciar desde JS.
+
+let promoCode = promo.innerText;//Codigo que activa el descuento.
+
+console.log(disc);
 console.log(promoCode);
-console.log(total);
 
-console.log();
-console.log("Ud. tiene como monto los valores: " + arrPrecios(pokemon));
-console.log("La suma de los funkos es " + sumarPrecio(pokemon));
-console.log("______________________________________________________");
-console.log("La lista de precios a sumar es " + arrPrecios(harrypotter));
-console.log("Tus funko suman la cantidad de " + sumarPrecio(harrypotter));
-console.log("______________________________________________________");
-console.log("Los precios son: " + arrPrecios(starwars));
-console.log("La suma de los funkos de Star War es " + sumarPrecio(starwars));
+//Evalua si el array esta vacio para inserta en el HTML los datos recibidos desde el localStorages
+if (seleccionados.length >= 0) {
+  cantObj.innerText = "0";  //Define la cantidad de objetos que hay en el array 'seleccionados'
+  setTimeout(() => {
+    cantObj.innerText = seleccionados.length;
+  }, 1000);
+  setTimeout(() => {
+    bandeja.innerHTML = "<H1>Cargando.</H1>";
+    setTimeout(() => {
+      bandeja.innerHTML = "<H1>Cargando..</H1>";
+      setTimeout(() => {
+        bandeja.innerHTML = "<H1>Cargando...</H1>";
+        setTimeout(() => {
+          bandeja.innerHTML = "";
+          crearCart(seleccionados)
+          total.innerText = "$" + sumarPrecio(seleccionados);
+          
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
+} else {
+cantObj.innerText = "0";
+bandeja.innerHTML = "<h1>No hay ningún Funko selecionado</h1>"
+}
 
 
 
@@ -51,40 +58,17 @@ console.log("La suma de los funkos de Star War es " + sumarPrecio(starwars));
     console.log(fila[x]);
   }
 } */
-  
-  
+
+
 //Una vez que se realiza el checkout, se aplica el localStorage.removeItem('cart'); o localStorage.clear();
-    
-console.log(sumarPrecio(seleccionados));
-
-
 
 
 
 //Items de la lista
-setTimeout(() => {
-  bandeja.innerHTML = "<H1>Cargando.</H1>";
-  setTimeout(() => {
-    bandeja.innerHTML = "<H1>Cargando..</H1>";
-    setTimeout(() => {
-      bandeja.innerHTML = "<H1>Cargando...</H1>";
-      setTimeout(() => {
-        bandeja.innerHTML = "";
-        crearCart(seleccionados)
-        total.innerHTML = "";
-        setTimeout(() => {
-          total.appendChild(p);          
-        },1000)
-      }, 1000);  
-    }, 1000);
-  }, 1000);
-}, 1000);
 
-if (cantidadCart.length >= 0) {
-  console.log("hay " + cantidadCart.length + " objetos");
-} else {
-  console.log("no hay");
-}
+
+    
+  
 
 
 
