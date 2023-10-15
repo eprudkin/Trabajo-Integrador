@@ -20,7 +20,7 @@ export function arrPrecios(arr) {
     const arrPrecios = [];
     for (let i = 0; i < arr.length; i++) {
         arrPrecios.push(parseInt(arr[i].precio))
-    }
+    } 
     return arrPrecios;
 }
 

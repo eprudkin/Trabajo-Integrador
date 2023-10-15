@@ -1,7 +1,36 @@
+/* import { filtradoFunko } from "./filtro";
+import { infoFunkos } from "./funkos";
+ */
 
+export function magicCard(obj) {
+  let html = "";
+  //destructuring
+  const { serie, modelo, descripcion, precio, img, id } = obj;
+  html =
+    `
+          <article class="card shadow-lg my-3">
+          <picture class="card-img-top">
+              <img src="../multimedia/${img}" alt="${descripcion}">
+          </picture>
+          <div class="card-body text-center">
+              <p class="card-text text-bg-danger w-25">NUEVO</p>
+              <H3 class="card-title">${modelo}</H3>
+              <p class="card-subtitle text-body-secondary">${serie}</p>
+              <p class="card-text">${precio}</p>
+              <p class="card-text text-info">3 CUOTAS SIN INTERÉS</p>
+              <button  id="${id}" type="submit" class="btn btnAdd btn-primary">Agregar al carrito</button>
+              </div>
+      </article>
+            `;
+  bandeja.innerHTML += html;
+}
 
 function guardarEnstorage(encontrado) {
   return localStorage.setItem('cart', JSON.stringify(encontrado))
+}
+
+function guaradarElemento(elemento) {
+  return cart.push(elemento)
 }
 
 export function crearHtml(array) {
@@ -34,10 +63,10 @@ export function crearHtml(array) {
     btnAdd.addEventListener('click', (e) => {
       e.preventDefault();
       console.log("Todavia no se");
-     
-      /* 
       guaradarElemento(add);
       guardarStorage(tablaSecundaria);
+      
+      /* 
       Toastify({
         text: 'Elemento agregado!!',
         duration: 3000,
@@ -55,6 +84,7 @@ export function crearHtml(array) {
     });
   });
 }
+
 export function crearCart(array) {
 
   for (const itemList of array) {
@@ -117,6 +147,7 @@ export function crearCard(encontrado) {
     agregar.addEventListener('click', (e)=>{
       e.preventDefault();
       console.log("estoy agregando al carrito");
+      guardarEnstorage(encontrado);
     });
 }
 

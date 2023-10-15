@@ -11,8 +11,19 @@ const next = document.getElementById('next');
 const back = document.getElementById('next');
 const input = document.querySelectorAll('input[type = "text"]');
 const form = document.getElementById('myForm');
+const cart = [];
 
 
+
+function guardarEnstorage(encontrado) {
+  return localStorage.setItem('cart', JSON.stringify(encontrado))
+}
+
+function guaradarElemento(elemento) {
+  return cart.push(elemento)
+}     
+
+  
 
 
 /* function funko(id, serie, modelo, descripcion, precio, img) {
@@ -30,35 +41,40 @@ const form = document.getElementById('myForm');
 };
  */
 
+  
+
+
 btnVer.addEventListener('click', (e)=>{
   e.preventDefault();
-  bandeja.innerHTML = "<H1>Cargando.</H1>";
   setTimeout(() => {
-    bandeja.innerHTML = "<H1>Cargando..</H1>";
+    bandeja.innerHTML = "<H1>Cargando.</H1>";
+    setTimeout(() => {
+      bandeja.innerHTML = "<H1>Cargando..</H1>";
+      setTimeout(() => {
+        bandeja.innerHTML = "<H1>Cargando...</H1>";
+        setTimeout(() => {
+          bandeja.innerHTML = "";
+          crearHtml(infoFunkos);
+        }, 1000);  
+      }, 1000);
+    }, 1000);
   }, 1000);
-  setTimeout(() => {
-    bandeja.innerHTML = "<H1>Cargando...</H1>";
-  }, 1200);
-  setTimeout(() => {
-    bandeja.innerHTML = "";
-  }, 1500);
-  setTimeout(() => {
-    crearHtml(infoFunkos);
-   
-  }, 2000);
 })
 
 btnBuscar.addEventListener('click', (e)=>{
   e.preventDefault();
-  let buscar = input[0].value;  
+  let buscar = input[0].value;
   setTimeout(() => {
+    bandeja.innerHTML = "";
     const encontrado = filtradoFunko(infoFunkos, buscar);
     crearCard(encontrado);
+    guaradarElemento(encontrado);
+    guardarEnstorage(cart)
    
   }, 2000);
 });
 
-function buscarParametro(params) {
+/* function buscarParametro(params) {
     const formData = new FormData(form);
     const parametro = formData.get('parametro');
     return console.log(parametro);
@@ -66,7 +82,7 @@ function buscarParametro(params) {
 buscarParametro()
 
 
-
+ */
 
     
 /*     
