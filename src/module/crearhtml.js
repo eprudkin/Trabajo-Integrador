@@ -2,6 +2,8 @@
 import { infoFunkos } from "./funkos";
  */
 
+const cart = [];
+
 export function magicCard(obj) {
   let html = "";
   //destructuring
@@ -31,7 +33,7 @@ function guardarEnstorage(encontrado) {
 
 function guaradarElemento(elemento) {
   return cart.push(elemento)
-}
+}   
 
 export function crearHtml(array) {
   for (const item of array) {
@@ -63,24 +65,10 @@ export function crearHtml(array) {
     btnAdd.addEventListener('click', (e) => {
       e.preventDefault();
       console.log("Todavia no se");
+      let add = seleccionados.find((el) => el.id == btnAdd.id);
       guaradarElemento(add);
-      guardarStorage(tablaSecundaria);
+     
       
-      /* 
-      Toastify({
-        text: 'Elemento agregado!!',
-        duration: 3000,
-        close: true,
-        gravity: 'top',
-        position: 'rigth',
-        stopOnFocus: true,
-        style: {
-          background: 'linear-gradient(to right, #00b09b, #96c93d)',
-        },
-        onclick: function () {
-          console.log('funciona');
-        }
-      }).showToast(); */
     });
   });
 }
@@ -113,8 +101,18 @@ export function crearCart(array) {
   }
   const arrayBotones = document.querySelectorAll(".btnAdd");
   console.log(arrayBotones);
+  arrayBotones.forEach((btnAdd) => {
+    btnAdd.addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log("Todavia no se");
+   
+    
+    });
+  });
 }
 
+
+//Esta función se ejecuta en el shop cuando se busca un funko
 export function crearCard(encontrado) {
   let html = "";
     //destructuring
@@ -147,11 +145,14 @@ export function crearCard(encontrado) {
     agregar.addEventListener('click', (e)=>{
       e.preventDefault();
       console.log("estoy agregando al carrito");
-      guardarEnstorage(encontrado);
+      
+      guaradarElemento(encontrado);
+      console.log(cart);
+      guardarEnstorage(cart)
     });
 }
 
-export function crearlistCard (selected) {
+export function crearlistCard (encontrado) {
   let html = "";
   const { id, codigo, modelo, serie } = encontrado;
     html = `

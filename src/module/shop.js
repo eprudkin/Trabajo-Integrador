@@ -68,9 +68,10 @@ btnBuscar.addEventListener('click', (e)=>{
     bandeja.innerHTML = "";
     const encontrado = filtradoFunko(infoFunkos, buscar);
     crearCard(encontrado);
+    /*  
     guaradarElemento(encontrado);
     guardarEnstorage(cart)
-   
+    */
   }, 2000);
 });
 
