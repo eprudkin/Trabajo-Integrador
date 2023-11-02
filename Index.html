@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="style/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="style/Style.css">
+    <link rel="stylesheet" href="style/index.css">
     <title></title>
 </head>
 
 <body>
-    <!-- Inicio de header -->
-    <header>
+    <header><!-- Inicio de header -->
         <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="./Index.html">
@@ -47,114 +46,119 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <!-- Fin de header -->
-    <main class="container">
-        <section class="row px-4 py-5 text-center nuevos"><!-- Inicio de BANNER -->
-            <article class="clo-10 align-items-center">
-                <h3 class="display-5 fw-bold">Nuevos Ingresos</h3>
-                <p class="lead mb-4">Desubrí el próximo Funko Pop de tu colección</p>
-                <a href="pages/shop.html"><button type="button" class="btn btn-dark btn-lg px-4 gap-3">SHOP</button></a>
-            </article>
-            <!-- LA imagen va de fondo -->
-        </section><!-- Fin de BANNER -->
+    </header><!-- Fin de header -->
+    <section class="hero"><!-- Inicio de BANNER -->
+        <article class="hero__content container">
+            <h3 class="hero__title">Nuevos Ingresos</h3>
+            <p class="hero__text">Desubrí el próximo Funko Pop de tu colección</p>
+            <a class="hero__link" href="pages/shop/shop.html">SHOP</a>
+        </article>
+        <!-- LA imagen va de fondo -->
+    </section><!-- Fin de BANNER -->
+    <main class="main-container">
         <!-- Inicia catalog de muestra -->
         <section
-            class="card shadow-lg px-5 d-flex flex-column-reverse flex-md-row align-items-center justify-content-center my-4">
-            <article class="card-body">
-                <h3 class="card-title">Star Wars & The Mandalorian</h3>
-                <p class="card-subtitle">Disfruta de una saga que sigue agregando personajes a su colección</p>
+            class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">Star Wars & The mandalorian</h3>
+                <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección</p>
                 <div class="divider"></div>
-                <a href="pages/" class="btn btn-dark card-link">Ver Colección</a>
+                <a href="pages/shop/shop.html" class="collection__link">VER COLECCIÓN</a>
             </article>
-            <picture class="card-img d-flex justify-content-start">
+            <picture class="collection__cover">
                 <img src="multimedia/star-wars/baby-yoda-1.webp"
-                    alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian" width="100%">
+                    alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
             </picture>
         </section>
 
         <section
-            class="card shadow-lg px-5 d-flex flex-column-reverse  flex-md-row-reverse align-items-center justify-content-center my-4">
-            <article class="card-body">
-                <h3 class="card-title">Pokemon Indigo</h3>
-                <p class="card-subtitle">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
-                <div class="divider"></div>
-                <a href="" class="btn btn-dark card-link">Ver Colección</a>
+            class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">POKEMON INDIGO</h3>
+                <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
+                
+                <a href="pages/shop/shop.html" class="collection__link">VER COLECCIÓN</a>
             </article>
-            <picture class="card-img d-flex justify-content-start">
+            <picture class="collection__cover">
                 <img src="multimedia/pokemon/vulpix-1.webp"
-                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter." width="100%">
+                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter.">
             </picture>
         </section>
 
 
 
         <section
-            class="card shadow-lg d-flex flex-column-reverse flex-md-row align-items-center justify-content-center px-5 my-4">
-            <article class="card-body">
-                <h3 class="card-title ">Harry Potter</h3>
-                <p class="card-subtitle">Revive los recuerdos de una saga llena de magia y encanto</p>
-                <div class="divider"></div>
-                <a href="" class="btn btn-dark card-link">Ver Colección</a>
+            class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">HARRY POTTER</h3>
+                <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto</p>
+               
+                <a href="pages/shop/shop.html" class="collection__link">VER COLECCIÓN</a>
             </article>
-            <picture class="card-img d-flex justify-content-start">
+            <picture class="collection__cover">
                 <img src="multimedia/harry-potter/snape-patronus-1.webp"
-                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter." width="100%">
+                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter.">
             </picture>
         </section>
 
 
-        <section class="row">
-            <h2 class="text-center text-decoration-underline">ÚLTIMOS LANZAMIENTOS</h2>
-            <hr>
-            <div
-                class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-sm-evenly py-5 text-center flex-grow-0">
-                <section class="card col-sm-3 col-md-10 col-lg-3 my-3 shadow-lg">
-                    <a href="" class="card-link"></a>
-                    <picture class="card-img-top">
-                        <img src="multimedia/star-wars/trooper-1.webp" width="100%"
-                            alt="Figura coleccionable Funko de un StromTrooper.">
-                    </picture>
-                    <article class="card-body">
-                        <P class="card-text lead mb-4">STAR WARS</P>
-                        <h4 class="card-title fw-bold">STORMTROOPER LIGHTSABER</h4>
-                        <p class="card-text">$1799,99</p>
-                        <p class="card-text">3 CUOTAS SIN INTERÉS</p>
+        <section class="slider container">
+            <h2 class="slider__title">ÚLTIMOS LANZAMIENTOS</h2>
+            
+            <ul class="slider__items">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a href="" class="card-item__link"></a>
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">NUEVO</span>
+                            <img class="card-item__img--front" src="multimedia/star-wars/trooper-1.webp"
+                                alt="Figura coleccionable Funko de un StromTrooper.">
+                            <img class="card-item__img--back" src="multimedia/star-wars/trooper-box.webp" alt="StromTrooper en caja">
+                        </picture>
+                        <div class="card-item__content">
+                            <P class="card-item__licence">STAR WARS</P>
+                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </>
                     </article>
-                </section>
-
-
-                <section class="card col-sm-3 col-md-10 col-lg-3 my-3 shadow-lg">
-                    <a href="" class="card-link"></a>
-                    <picture class="card-img">
-                        <img src="multimedia/pokemon/pidgeotto-1.webp" width="100%"
-                            alt="Figura coleccioable Fungo PIDGEOTTO">
-                    </picture>
-
-                    <article class="card-body">
-                        <P class="card-text lead mb-4">POKEMON</P>
-                        <h4 class="card-title fw-bold">PIDGEOTTO</h4>
-                        <p class="card-text">$1799,99</p>
-                        <p class="card-text">3 CUOTAS SIN INTERÉS</p>
+                </li>
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a href="" class="card-item__link"></a>
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">NUEVO</span>
+                            <img class="card-item__img--front" src="multimedia/pokemon/pidgeotto-1.webp"
+                                alt="Figura coleccioable Fungo PIDGEOTTO">
+                            <img class="card-item__img--back" src="multimedia/pokemon/pidgeotto-box.webp" alt="">                            
+                        </picture>
+                        <article class="card-item__content">
+                            <P class="card-item__licence">POKEMON</P>
+                            <h4 class="card-item__name">PIDGEOTTO</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </article>
                     </article>
-                </section>
-
-
-                <section class="card col-sm-3 col-md-10 col-lg-3 my-3 shadow-lg">
-                    <a href="" class="card-link"></a>
-                    <picture class="card-img">
-                        <img src="multimedia/harry-potter/luna-1.webp" width="100%"
-                            alt="Figura coleccioable Funko de luna lovegoof">
-                    </picture>
-                    <article class="card-body">
-                        <P class="card-text  lead mb-4">HARRY POTTER</P>
-                        <h4 class="card-title fw-bold">LUNA LOVEGOOD LION MASK</h4>
-                        <p class="card-text">$1799,99</p>
-                        <p class="card-text">3 CUOTAS SIN INTERÉS</p>
+                </li>
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a href="" class="card-item__link"></a>
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">NUEVO</span>
+                            <img class="card-item__img--front" src="multimedia/harry-potter/luna-1.webp"
+                                alt="Figura coleccioable Funko de luna lovegoof">
+                            <img class="card-item__img--back" src="multimedia/harry-potter/luna-box.webp" alt="">
+                        </picture>
+                        <article class="card-item__content">
+                            <P class="card-item__licence">HARRY POTTER</P>
+                            <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="card-item__price">$1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </article>
                     </article>
-                </section>
+                </li>
 
-            </div>
+            </ul>
         </section>
     </main>
     <footer class="container-fluid">
