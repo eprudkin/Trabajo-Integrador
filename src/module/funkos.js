@@ -131,4 +131,8 @@ export const infoFunkos = [
             img2: "/pokemon/pikachu-box.webp"
         }
     
-    ]
+]
+
+
+
+

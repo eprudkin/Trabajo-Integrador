@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style/bootstrap.min.css"> -->
     <link rel="stylesheet" href="style/Style.css">
     <title></title>
 </head>
@@ -14,39 +13,39 @@
 <body>
     <!-- Inicio de header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
-            <div class="container-fluid">
-                <picture>
-                    <a href="Index.html"> <img class="logo p-1" src="../multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
-                </picture>
-                <H3>FUNKOSHOP</H3>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../pages/shop.html">SHOP</a>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="./Index.html">
+                    <img src="multimedia/branding/logo_light_horizontal.svg" alt="">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="pages/shop/shop.html">SHOP<iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a class="submenu__link" href="">Funkos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contact.html">CONTACTO</a>
+                        <li class="submenu__item">
+                            <a class="submenu__link" href="">Remeras</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/login.html">LOGIN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/cart.html">CART</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/cart.html"> <img
-                                    src="../multimedia/icons/cart-icon.svg" alt=""><!-- Logo del carrito -->
-                            </a>
+                        <li class="submenu__item">
+                            <a class="submenu__link" href="">LLAveros</a>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="pages/cart.html"><img src="multimedia/icons/cart-icon.svg" alt=""
+                            srcset=""></a>
+                </li>
+            </ul>
         </nav>
     </header>
     <!-- Fin de header -->
@@ -55,13 +54,13 @@
             <article class="clo-10 align-items-center">
                 <h3 class="display-5 fw-bold">Nuevos Ingresos</h3>
                 <p class="lead mb-4">Desubrí el próximo Funko Pop de tu colección</p>
-                <a href="pages/shop.html"><button type="button"
-                        class="btn btn-dark btn-lg px-4 gap-3">SHOP</button></a>
+                <a href="pages/shop.html"><button type="button" class="btn btn-dark btn-lg px-4 gap-3">SHOP</button></a>
             </article>
             <!-- LA imagen va de fondo -->
         </section><!-- Fin de BANNER -->
         <!-- Inicia catalog de muestra -->
-        <section class="card shadow-lg px-5 d-flex flex-column-reverse flex-md-row align-items-center justify-content-center my-4">
+        <section
+            class="card shadow-lg px-5 d-flex flex-column-reverse flex-md-row align-items-center justify-content-center my-4">
             <article class="card-body">
                 <h3 class="card-title">Star Wars & The Mandalorian</h3>
                 <p class="card-subtitle">Disfruta de una saga que sigue agregando personajes a su colección</p>
@@ -74,7 +73,8 @@
             </picture>
         </section>
 
-        <section class="card shadow-lg px-5 d-flex flex-column-reverse  flex-md-row-reverse align-items-center justify-content-center my-4">
+        <section
+            class="card shadow-lg px-5 d-flex flex-column-reverse  flex-md-row-reverse align-items-center justify-content-center my-4">
             <article class="card-body">
                 <h3 class="card-title">Pokemon Indigo</h3>
                 <p class="card-subtitle">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
@@ -89,7 +89,8 @@
 
 
 
-        <section class="card shadow-lg d-flex flex-column-reverse flex-md-row align-items-center justify-content-center px-5 my-4">
+        <section
+            class="card shadow-lg d-flex flex-column-reverse flex-md-row align-items-center justify-content-center px-5 my-4">
             <article class="card-body">
                 <h3 class="card-title ">Harry Potter</h3>
                 <p class="card-subtitle">Revive los recuerdos de una saga llena de magia y encanto</p>
@@ -98,7 +99,7 @@
             </article>
             <picture class="card-img d-flex justify-content-start">
                 <img src="multimedia/harry-potter/snape-patronus-1.webp"
-                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter."  width="100%">
+                    alt="Figura coleccionable Funko del Patronus de snape en la pelicula de harry potter." width="100%">
             </picture>
         </section>
 
@@ -171,11 +172,9 @@
             <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous">Boosrtrap</script>
-        <script src="src/app.js" type="module"></script>
-        
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="src/app.js" type="module"></script>
 </body>
 
 </html>

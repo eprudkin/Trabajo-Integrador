@@ -3,8 +3,10 @@ import { filtradoFunko } from "./filtro.js";
 import { infoFunkos } from "./funkos.js"
 import { crearCard } from "./crearhtml.js";
 
-document.title = "Shop | Funkoshop";
 
+document.title = "Shop | Funkoshop";
+//Data Dibision
+  //Working storage
 const bandeja = document.getElementById('bandeja');
 const btnBuscar = document.getElementById('btnBuscar');
 const next = document.getElementById('next');
@@ -23,7 +25,7 @@ function guaradarElemento(elemento) {
   return cart.push(elemento)
 }     
 
-  
+
 
 
 /* function funko(id, serie, modelo, descripcion, precio, img) {
@@ -41,7 +43,24 @@ function guaradarElemento(elemento) {
 };
  */
 
-  
+/* const pedirFunkos = ()=>{
+  return new Promise((resolve,reject) => {
+    setTimeout(() => {
+      resolve(crearHtml(infoFunkos))
+    }, 1000);
+  })
+}
+
+pedirFunkos().then((response)=>{
+  cart = response
+  crearHtml(cart)          
+}).catch((error) => {
+
+}) */
+
+
+
+
 
 
 btnVer.addEventListener('click', (e)=>{
