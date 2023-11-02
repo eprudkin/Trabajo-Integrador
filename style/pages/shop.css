@@ -1,0 +1,11 @@
+.shop {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    bottom: 1;
+}

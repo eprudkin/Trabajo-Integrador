@@ -1,4 +1,40 @@
+/* EXTERNALS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,400;1,500&family=Roboto:wght@300&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
+
+/* MISCELANEOUS */
+@import url('./misc/variables.css');
+@import url('./misc/normalize.css');
+@import url('./misc/helpers.css');
+@import url('./misc/animations.css');
+
+/* PARTIALS */
+
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
+
+/* COMPONENTS */
+
+@import url('./components/buttons.css');
+@import url('./components/form.css');
+@import url('components/card.css');
+@import url('./components/slider.css');
+
+/* PAGES */
+
+@import url('./pages/home.css');
+@import url('./pages/shop.css');
+@import url('./pages/item.css');
+@import url('./pages/admin.css');
+@import url('./pages/login.css');
+@import url('./pages/register.css');
+@import url('./pages/create.css');
+@import url('./pages/edit.css');
+
+
+
+
 :root {
     /*Palette*/
     --primary-solid: #ff3333;
@@ -243,72 +279,7 @@ header {
     background-color: var(--primary-900);
 }
 
-/* SLIDER */
 
-.slider {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-36);
-    margin: var(--spacing-68) auto;
-}
-.slider__title {
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    text-transform: uppercase;
-
-}
-.slider__items {
-    display: flex;
-    gap: var(--spacing-24);
-}
-
-.card-item__cover{
-    display: flex;
-    position: relative;
-}
-.card-item__tag {
-    font-size: var(--font-xsmall);
-    text-transform: uppercase;
-    background-color: var(--primary-solid);
-    color: var(--light-font-solid);
-    padding: var(--spacing-8) var(--spacing-12);
-    position: absolute;
-    right: 0;
-}
-.card-item__cover img{
-    animation:fade .7s;
-}
-.card-item__img--back {
-    display: none;
-}
-.card-item__cover:hover .card-item__img--back{
-    display: block;
-}
-.card-item__cover:hover .card-item__img--front{
-    display: none;
-}
-.card-item__content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-12);
-    padding: var(--spacing-16);
-}
-.card-item__licence {
-    font-size: var(--font-xsmall);
-    font-weight: 500;
-}
-.card-item__name {
-    font-size: var(--font-medium);
-    font-weight: 700;
-}
-.card-item__price {
-    font-size: var(--font-small);
-}
-.card-item__promo {
-    font-size: var(--font-xsmall);
-    color: var(--secondary-solid);
-    font-weight: 700;
-}
 /* FOOTER */
 .footer {
     background-color: var(--dark-bg-solid);

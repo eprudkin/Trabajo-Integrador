@@ -1,6 +1,4 @@
-/* import { filtradoFunko } from "./filtro";
-import { infoFunkos } from "./funkos";
- */
+
 
 const cart = [];
 
