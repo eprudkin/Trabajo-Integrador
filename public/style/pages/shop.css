@@ -9,3 +9,23 @@
     align-items: end;
     bottom: 1;
 }
+
+.bandeja {
+    width: 100%;
+    height: fit-content;
+    margin: var(--spacing-12);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.bandeja>.listaBandeja {
+    width: 100%;
+    height: fit-content;
+    border: 3px solid white;
+    background-color: var(--site-main-background);
+}

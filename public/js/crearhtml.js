@@ -43,7 +43,7 @@ export function crearHtml(array) {
       `
             <article class="card shadow-lg my-3">
             <picture class="card-img-top">
-                <img src="../multimedia/${img}" alt="${descripcion}">
+                <img src="../../multimedia/${img}" alt="${descripcion}">
             </picture>
             <div class="card-body text-center">
                 <p class="card-text text-bg-danger w-25">NUEVO</p>
