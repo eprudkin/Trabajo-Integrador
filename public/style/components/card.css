@@ -1,4 +1,16 @@
 /* CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 360px;
+    padding: var(--spacing-20);
+    gap: var(--spacing-28);
+}
+.card__collection{
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
 .card-item__cover{
     display: flex;
     position: relative;

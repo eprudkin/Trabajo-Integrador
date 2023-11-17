@@ -5,46 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/octoface.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/components/bootstrap.min.css">
     <link rel="stylesheet" href="style/index.css">
     <title></title>
 </head>
 
 <body>
     <header><!-- Inicio de header -->
-        <nav class="navbar container">
+        <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
             <picture class="navbar__logo">
                 <a href="./Index.html">
                     <img src="multimedia/branding/logo_light_horizontal.svg" alt="">
                 </a>
             </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="pages/shop/shop.html">SHOP<iconify-icon
-                            icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="">LLAveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="pages/contact.html">CONTACTO</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="pages/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="pages/cart.html"><img src="multimedia/icons/cart-icon.svg" alt=""
-                            srcset=""></a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarsExample04">
+                <ul class="navbar-nav navbar__menu">
+                    <li class="nav__item dropdown with-submenu">
+                        <a class="nav__link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">SHOP</a>
+                        <ul class=" submenu">
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Funkos</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Remeras</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Llaveros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav__link" aria-current="page" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">LOGIN</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">CART</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link"><img src="multimedia/icons/cart-icon.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
     </header><!-- Fin de header -->
     <section class="hero"><!-- Inicio de BANNER -->
         <article class="hero__content container">
@@ -56,8 +61,7 @@
     </section><!-- Fin de BANNER -->
     <main class="main-container">
         <!-- Inicia catalog de muestra -->
-        <section
-            class="collection container">
+        <section class="collection container">
             <article class="collection__content">
                 <h3 class="collection__title">Star Wars & The mandalorian</h3>
                 <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección</p>
@@ -70,12 +74,11 @@
             </picture>
         </section>
 
-        <section
-            class="collection container">
+        <section class="collection container">
             <article class="collection__content">
                 <h3 class="collection__title">POKEMON INDIGO</h3>
                 <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
-                
+
                 <a href="pages/shop/shop.html" class="collection__link">VER COLECCIÓN</a>
             </article>
             <picture class="collection__cover">
@@ -86,12 +89,11 @@
 
 
 
-        <section
-            class="collection container">
+        <section class="collection container">
             <article class="collection__content">
                 <h3 class="collection__title">HARRY POTTER</h3>
                 <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto</p>
-               
+
                 <a href="pages/shop/shop.html" class="collection__link">VER COLECCIÓN</a>
             </article>
             <picture class="collection__cover">
@@ -102,7 +104,7 @@
 
 
         <section class="slider container glide">
-            <h2 class="slider__title">ÚLTIMOS LANZAMIENTOS</h2>
+       
             <div class="glide__track" data-glide-el="track">
                 <ul class="slider__items glide__slides">
                     <li class="slider__item glide__slide">
@@ -112,7 +114,8 @@
                                 <span class="card-item__tag">NUEVO</span>
                                 <img class="card-item__img--front" src="multimedia/star-wars/trooper-1.webp"
                                     alt="Figura coleccionable Funko de un StromTrooper.">
-                                <img class="card-item__img--back" src="multimedia/star-wars/trooper-box.webp" alt="StromTrooper en caja">
+                                <img class="card-item__img--back" src="multimedia/star-wars/trooper-box.webp"
+                                    alt="StromTrooper en caja">
                             </picture>
                             <div class="card-item__content">
                                 <P class="card-item__licence">STAR WARS</P>
@@ -129,7 +132,7 @@
                                 <span class="card-item__tag">NUEVO</span>
                                 <img class="card-item__img--front" src="multimedia/pokemon/pidgeotto-1.webp"
                                     alt="Figura coleccioable Fungo PIDGEOTTO">
-                                <img class="card-item__img--back" src="multimedia/pokemon/pidgeotto-box.webp" alt="">                            
+                                <img class="card-item__img--back" src="multimedia/pokemon/pidgeotto-box.webp" alt="">
                             </picture>
                             <article class="card-item__content">
                                 <P class="card-item__licence">POKEMON</P>
@@ -159,23 +162,25 @@
                 </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:twotone-chevron-left"></iconify-icon></button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:twotone-chevron-right"></iconify-icon></button>
-              </div>
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon
+                        icon="ic:twotone-chevron-left"></iconify-icon></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon
+                        icon="ic:twotone-chevron-right"></iconify-icon></button>
+            </div>
         </section>
     </main>
     <footer class="footer">
-            <nav class="navbar container">
-                <ul class="navbar__item">
-                    <li class="navbar__item"><a href="Busqueda.html" class="navbar__link">SHOP</a></li>
-                    <li class="navbar__item"><a href="" class="navbar__link">INGRESAR</a></li>
-                    <li class="navbar__item"><a href="" class="navbar__link">CONTACTO </a></li>
-                </ul>
-                <picture>
-                    <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
-                </picture>
-            </nav>
-            <P class="footer__copy">All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a href="Busqueda.html" class="navbar__link">SHOP</a></li>
+                <li class="navbar__item"><a href="" class="navbar__link">INGRESAR</a></li>
+                <li class="navbar__item"><a href="" class="navbar__link">CONTACTO </a></li>
+            </ul>
+            <picture>
+                <img class="logo" src="multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+            </picture>
+        </nav>
+        <P class="footer__copy">All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

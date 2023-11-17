@@ -5,56 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/octoface.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/Style.css">
+    <link rel="stylesheet" href="../style/components/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    
     <title>Contacto</title>
 </head>
 <!-- Inicio de header -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
-        <div class="container-fluid">
-            <picture>
-                <a href="../Index.html">
-                    <img class="logo p-1" src="../multimedia/branding/isotype.svg" alt="Imagen de la marca Funkoshop"></a>
+<body>
+    <header><!-- Inicio de header -->
+        <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+            <picture class="navbar__logo">
+                <a href="./Index.html">
+                    <img src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+                </a>
             </picture>
-            <H3>FUNKOSHOP</H3>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
-                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample05">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../pages/shop.html">SHOP</a>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarsExample04">
+                <ul class="navbar-nav navbar__menu">
+                    <li class="nav__item dropdown with-submenu">
+                        <a class="nav__link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">SHOP</a>
+                        <ul class=" submenu">
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Funkos</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Remeras</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Llaveros</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contact.html">CONTACTO</a>
+                        <a class="nav__link" aria-current="page" href="#">CONTACTO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/login.html">LOGIN</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">LOGIN</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/cart.html">CART</a>
+                    <li class="nav__item">
+                        <a class="nav__link">CART</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/cart.html"> <img src="../multimedia/icons/cart-icon.svg"
-                                alt=""><!-- Logo del carrito -->
-                        </a>
+                    <li class="nav__item">
+                        <a class="nav__link"><img src="../multimedia/icons/cart-icon.svg" alt=""></a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header><!-- Fin de header -->
 
 <!-- Fin de header -->
 <main>
-    <section class="formulario row mb-5">
+    <section class="">
         <h1 class="col-8 offset-2">Contacto</h1>
-        <form method="post" action="http://demo-registro.com.ar" id="survey-form" class="col-lg-8 col-10 shadow-lg d-flex flex-column align-items-center text-white bg-dark rounded-4 pb-3">
-            <fieldset class="d-flex flex-column justify-content-around align-items-center align-text-center w-100 m-1 p-3">
+        <!-- el action es a donde envia los datos, metodo es como lo voy a enviar, enctype es que tipo de información envio como multipart/form-data, application/x-www-form-urlencoded, text/plain-->
+        <form method="post" action="http://demo-registro.com.ar" enctype="multipart/form-data" id="survey-form" class="col-lg-8 col-10 shadow-lg d-flex flex-column align-items-center text-white bg-dark rounded-4 pb-3">
+            <fieldset class="form__box--label">
                 <label id="name-label" for="first-name">Nombre:</label><input id="first-name" name="first-name" type="text" class="form-control"
                         placeholder="Nombre completo" required>
                 <label id="last-name-label" for="last-name">Apellido:</label><input id="last-name" type="text" name="last-name" placeholder="Apellido" class="form-control" required>

@@ -35,153 +35,15 @@
 
 
 
-:root {
-    /*Palette*/
-    --primary-solid: #ff3333;
-    --primary-900:rgba(255,51,51,0.9);
-    --primary-500:rgba(255,51,51,0.5);
-    --primary-300:rgba(255,51,51,0.3);
-    
-    --secondary-solid: #1D84B5;
-    --secondary-900:rgba(29,51,51,0.9);
-    --secondary-500:rgba(29,51,51,0.5);
-    --secondary-300:rgba(29,51,51,0.3);
 
 
-    --dark-solid: #1f1f1f;
-    --secondary-900:rgba(31,31,31,0.9);
-    --secondary-500:rgba(31,31,31,0.5);
-    --secondary-300:rgba(31,31,31,0.3);
 
-
-    --dark-bg-solid: #30343f;
-    --light-bg-solid: #fafaff;
-    --light-font-solid: #ffffff;
-    
-    
-    /* Typography */
-    --base-font:'Inter', Sans-serif;
-    --alternative-font: 'Raleway', sans-serif;
-
-    /* font-sizes */
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-large: 2.4em;
-    --font-medium: 1.8em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.4em;
-    
-    /* Spacing */
-    --spacing-128: 12.8rem;
-    --spacing-68: 6.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-24: 2.4rem;
-    --spacing-20: 2rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
-    
-    --site-header: #383c46;
-    --site-main-background: #ffffff;
-    --site-color-font: antiquewhite;
-}
-
-/* NUEVAS-LINEAS */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: var(--base-font);
-    font-size: 62.5%;
-    color: var(--dark-solid);
-}
-
-a {
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;
-}
- header,
- footer {
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
- }
-
-ul,
-ol {
-    list-style: none;
-}
-
-p {
-    font-size: 1.8em;
-}
-img {
-    width: 100%;
-}
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* HEDER */
-header {
-    background-color: var(--dark-bg-solid);
-    padding: var(--spacing-36);
-}    
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-20);
-}
-.navbar__logo{
-    max-width: 300px;
-}
-.navbar__menu {
-    display: flex;
-    align-items: center;
-}
-.navbar__link {
-    font-size: var(--font-medium);
-    padding: var(--spacing-8) var(--spacing-16);
-    display: inline-block;
-    transition: background .3s ease-in-out;
-    position: relative;
-}
-.with-icon {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-8);
-}
-.with-submenu:hover .submenu {
-    display: block;
-    z-index: 1;
-}
-.navbar__link:hover {
-    background-color: var(--primary-900);
-}
-.submenu {
-    display: none;
-    width: 300px;
-    position: absolute;
-    background-color: var(--dark-bg-solid);
-}
-.submenu__link {
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    font-size: var(--font-medium);
-    transition: background .3s ease-in-out;
-}
-.submenu__link:hover {
-    background-color: var(--primary-900);
-}
+
 /* HERO */
 .hero {
     background-image: url(../multimedia/funkos-banner.webp);
@@ -281,14 +143,7 @@ header {
 
 
 /* FOOTER */
-.footer {
-    background-color: var(--dark-bg-solid);
-    padding: var(--spacing-68);
-}
-.footer__copy {
-    text-align: center;
-    margin-top: var(--spacing-36);
-}
+
 /* Animations */
 @keyframes fade {
     0% {opacity: 0;}
