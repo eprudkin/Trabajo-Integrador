@@ -12,7 +12,7 @@
 
 <body>
     <header><!-- Inicio de header -->
-        <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fourth navbar example">
             <picture class="navbar__logo">
                 <a href="./Index.html">
                     <img src="multimedia/branding/logo_light_horizontal.svg" alt="">
@@ -23,7 +23,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarsExample04">
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarsExample04">
                 <ul class="navbar-nav navbar__menu">
                     <li class="nav__item dropdown with-submenu">
                         <a class="nav__link dropdown-toggle" href="#" data-bs-toggle="dropdown"
@@ -51,11 +51,14 @@
         </nav>
 
     </header><!-- Fin de header -->
-    <section class="hero"><!-- Inicio de BANNER -->
-        <article class="hero__content container">
+    <section class="hero text-center px-4 py-5"><!-- Inicio de BANNER -->
+        <article class="hero__content container display-5">
             <h3 class="hero__title">Nuevos Ingresos</h3>
-            <p class="hero__text">Desubrí el próximo Funko Pop de tu colección</p>
-            <a class="hero__link" href="pages/shop/shop.html">SHOP</a>
+            <div class="col-lg-6">
+                <p class="hero__text lead mb-4">Desubrí el próximo Funko Pop de tu colección</p>
+                <a class="hero__link" href="pages/shop/shop.html">SHOP</a>
+            </div>
+                
         </article>
         <!-- LA imagen va de fondo -->
     </section><!-- Fin de BANNER -->
@@ -93,7 +96,6 @@
             <article class="collection__content">
                 <h3 class="collection__title">HARRY POTTER</h3>
                 <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto</p>
-
                 <a href="pages/shop/shop.html" class="collection__link">VER COLECCIÓN</a>
             </article>
             <picture class="collection__cover">
@@ -103,8 +105,7 @@
         </section>
 
 
-        <section class="slider container glide">
-       
+        <section class="slider container glide d-none d-md-block">
             <div class="glide__track" data-glide-el="track">
                 <ul class="slider__items glide__slides">
                     <li class="slider__item glide__slide">
