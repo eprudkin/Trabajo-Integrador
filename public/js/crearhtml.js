@@ -118,7 +118,7 @@ export function crearCard(encontrado) {
     html = `
       <article class="col-sm-12 col-md-12 col-lg-12 bg-light d-flex flex-row align-items-center rounded-5 my-2">
         <picture class="col-sm-1 col-md-2 col-lg-4">
-            <img src="../multimedia/${img}" alt="" class="w-100">
+            <img src="../../multimedia/${img}" alt="" class="w-100">
             </picture>
         <div class="card-body col-sm-8 col-md-4 col-lg-6">
            <p>${serie}</p>

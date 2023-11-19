@@ -1,0 +1,62 @@
+<main class="container shop">
+    <aside class="shop__search">
+        <form class="form" id="formsearch">
+            <label class="form__label form-label">BUSCAR</label>
+            <input type="text" id="parametro" name="parametro" placeholder="Item o categoria" class="text-center ">
+            <div class="">
+                <label class="form__label" for="naymen" name="naymen">Ordenar por:</label>
+                <select name="naymen" id="ordenar" class="form__select form-select"
+                    selectedaria-label="Default select example">
+                    <option value="1">mayor a menor</option>
+                    <option value="2">menor a mayor</option>
+                </select>
+            </div>
+            <p class="form__parrafo">Precio</p>
+            <div class="form__price input-group">
+                <label for="precio__label" class="precio__label form__label" name="precio__label">min</label>
+                <input class="precio__input" type="number" id="precio-max" name="precio-max" min="0"
+                    step="any">
+
+                <label for="precio__label" class="precio__label form__label" name="precio__label">max</label>
+                <input class="precio__input" type="number" id="precio-max" name="precio-max" min="0"
+                    step="any">
+            </div>
+
+            <div class="row flex-column align-items-center">
+                <div class="col-1 btn-group my-2 w-100">
+                    <button type="button" class="btn btn-sm btn-group-lg btn-dark"
+                        id="filtro-nuevos">Nuevos</button>
+                    <button type="button" class="btn btn-sm btn-group-lg btn-dark"
+                        id="filtro-ofertas">Ofertas</button>
+                </div>
+                <div class="col-1 btn-group my-2 w-100">
+                    <button type="button" class="btn btn-sm btn-group-lg btn-dark"
+                        id="filtro-edicion-especial">Especial</button>
+                    <button type="button" class="btn btn-sm  btn-group-lg btn-dark"
+                        id="filtro-favoritos">Favoritos</button>
+                </div>
+                <div class="row">
+                    <button type="submit" id="btnBuscar" class="btn btn-sm btn-success">Buscar</button>
+                </div>
+                <div class="row">
+                    <button type="submit" id="btnVer" class="btn btn-sm btn-success my-2">Ver Catálogo</button>
+                </div>
+            </div>
+        </form>
+        <div class="container-clock"></div>
+    </aside>
+    <section class="shop__list">
+
+    </section>
+    <!--  
+    <div class="d-flex flex-column">
+        <section id="bandeja" class="bandeja">
+        </section>
+        <div class="botones">
+            <button id="back" class="btn btn-primary w-10 col-1">
+                << /button>
+                    <button id="next" class="btn btn-primary w-10 col-1">></button>
+        </div>
+    </div>
+ -->
+</main>

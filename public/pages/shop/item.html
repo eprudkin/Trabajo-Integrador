@@ -53,10 +53,7 @@
 
     <!-- Fin de header -->
     <main class="container">
-        <section id="contenedorD">
-            <!-- Lista dinámica -->
-        </section>
-        <section class="item">
+        <section class="item shadow-lg">
             <picture class="item__img card-item__cover">
                 <img class="card-item__img--front" src="../../multimedia/star-wars/baby-yoda-1.webp" alt="" srcset="">
                 <img class="card-item__img--back" src="../../multimedia/star-wars/baby-yoda-box.webp" alt="">
@@ -65,24 +62,26 @@
                 <p class="item__licence">STAR WARS</p>
                 <h3 class="item__name">BABY YODA BLUEBALL</h3>
                 <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The mandaloran</p>
-                <p class="item__price"> 1799.99-</p>
+                <p class="item__price">$ 1799.99</p>
                 <div class="item__cart">
-                    <button id="subtract" class="item__quantity" type="button">-</button>
                     <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
-                    <button id="add" class="item__quantity" type="button">+</button>
+                    <div class="item__select">
+                        <button class="item__quantity agregar" id="add" type="button">+</button>
+                        <button class="item__quantity quitar" id="subtract" type="button">-</button>
+                    </div>
                     <button class="item__submit btn btn--primary btn--medium" >Agregar al carrito</button>
+
                 </div>
-                <p class="item__promo"><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
+                <p class="item__promo text-info"><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
             </article>
         </section>
-        <!-- Articulos para la venta -->
-        <!-- Articulo seleccionado -->
+
         <section class="slider container glide">
             <h2 class="slider__title">ÚLTIMOS LANZAMIENTOS</h2>
             <div class="glide__track" data-glide-el="track">
                 <ul class="slider__items glide__slides">
                     <li class="slider__item glide__slide">
-                        <article class="card-item">
+                        <article class="card-item shadow-lg">
                             <a href="" class="card-item__link"></a>
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
@@ -100,7 +99,7 @@
                         </article>
                     </li>
                     <li class="slider__item glide__slide">
-                        <article class="card-item">
+                        <article class="card-item shadow-lg">
                             <a href="" class="card-item__link"></a>
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
@@ -117,7 +116,7 @@
                         </article>
                     </li>
                     <li class="slider__item glide__slide">
-                        <article class="card-item">
+                        <article class="card-item shadow-lg">
                             <a href="" class="card-item__link"></a>
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
@@ -142,7 +141,7 @@
                         icon="ic:twotone-chevron-right"></iconify-icon></button>
             </div>
         </section>
-
+    </main>
 
         <footer class="footer">
             <nav class="navbar container">
