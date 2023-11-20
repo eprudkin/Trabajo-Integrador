@@ -1,18 +1,25 @@
 {
   "name": "trabajo-integrador---copia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Funko shop",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon app.js",
-    "start" : "node app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Jonathan Javier Urquiza",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "luxon": "^3.4.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.3"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
