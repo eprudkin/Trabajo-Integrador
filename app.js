@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
+const port = 3000;
 
-app.use(express.static('public_html'));
+app.use(express.static('public'));
 
 app.get('/home', (req, res) => {
 
@@ -14,4 +15,4 @@ app.get('/home', (req, res) => {
     
 app.get('/ping', (req, res) => res.send('pong'));
 
-app.listen(4000, () => console.log("Servidor corriendo en http://localhost:4000"));
+app.listen(port, () => console.log(`Servidor corriendo en http://localhost:${port}`));

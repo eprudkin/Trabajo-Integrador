@@ -15,7 +15,7 @@
     <header><!-- Inicio de header -->
         <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
             <picture class="navbar__logo">
-                <a href="./Index.html">
+                <a href="../Index.html">
                     <img src="../multimedia/branding/logo_light_horizontal.svg" alt="">
                 </a>
             </picture>
@@ -30,19 +30,19 @@
                         <a class="nav__link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">SHOP</a>
                         <ul class=" submenu">
-                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Funkos</a></li>
-                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Remeras</a></li>
-                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="#">Llaveros</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="shop/shop.html">Funkos</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="shop/remeras.html">Remeras</a></li>
+                            <li class="submenu__item"><a class="dropdown-item submenu__link" href="shop/llaveros.html">Llaveros</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" aria-current="page" href="#">CONTACTO</a>
+                        <a class="nav__link" aria-current="page" href="contact.html">CONTACTO</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">LOGIN</a>
+                        <a class="nav__link" href="login.html">LOGIN</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">CART</a>
+                        <a class="nav__link" href="shop/cart.html">CART</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link"><img src="../multimedia/icons/cart-icon.svg" alt=""></a>
@@ -57,8 +57,8 @@
     <section class="">
         <h1 class="col-8 offset-2">Contacto</h1>
         <!-- el action es a donde envia los datos, metodo es como lo voy a enviar, enctype es que tipo de información envio como multipart/form-data, application/x-www-form-urlencoded, text/plain-->
-        <form method="post" action="http://demo-registro.com.ar" enctype="multipart/form-data" id="survey-form" class="col-lg-8 col-10 shadow-lg d-flex flex-column align-items-center text-white bg-dark rounded-4 pb-3">
-            <fieldset class="form__box--label">
+        <form method="post" action="http://demo-registro.com.ar" enctype="multipart/form-data" id="survey-form" class="col-lg-8 offset-lg-2 col-10 shadow-lg d-flex flex-column align-items-center text-white bg-dark rounded-4 pb-3">
+            <fieldset class="">
                 <label id="name-label" for="first-name">Nombre:</label><input id="first-name" name="first-name" type="text" class="form-control"
                         placeholder="Nombre completo" required>
                 <label id="last-name-label" for="last-name">Apellido:</label><input id="last-name" type="text" name="last-name" placeholder="Apellido" class="form-control" required>
@@ -89,24 +89,20 @@
         </form>
     </section>
 </main>
-<footer>
-    <section class="d-flex flex-column justify-content-start align-items-center px-4 py-5 text-white">
-        <nav class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
-            <ul class="list-unstyled text-decoration-none">
-                <li><a href="Busqueda.html" class="nav_link">SHOP</a></li>
-                <li><a href="" class="nav_link">INGRESAR</a></li>
-                <li><a href="" class="nav_link">CONTACTO </a></li>
-            </ul>
-            <picture>
-                <img class="logo" src="../multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
-            </picture>
-        </nav>
-        <P>All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
-    </section>
+<footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item"><a href="Busqueda.html" class="navbar__link">SHOP</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link">INGRESAR</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link">CONTACTO </a></li>
+        </ul>
+        <picture>
+            <img class="logo" src="../multimedia/branding/isotype.svg" alt="Iso tipo de la marca funkoshop">
+        </picture>
+    </nav>
+    <P class="footer__copy">All rights reserved 2023 -Funkoshop & Grupo 2 Comisión 23569</P>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous">Boosrtrap</script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
