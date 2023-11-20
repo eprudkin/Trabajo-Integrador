@@ -1,110 +1,128 @@
-.container--shop{
+/* SHOP PAGE */
+
+#shop {
     display: flex;
-    flex-direction: row;
-    
+    gap: var(--spacing-28);
+    font-family: var(--base-font);
+    margin: var(--spacing-68) auto;
 }
 
-/* Filters aside */
-
-.filters__container{
-    padding-right: var(--spacing-20);
-}
-
-.filters__form{
+.shop__filters {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-28);
 }
 
-.filter{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-16);
-}
-
-.filter--price{
-    display: flex;
-    gap: 10px;
-}
-
-.filter__li{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-.label {
-    font-family: var(--base-font);
-    font-weight: 500;
+.filters__title {
     font-size: var(--font-medium);
-}
-.label--checkbox {
-    font-family: var(--base-font);
     font-weight: 500;
-    font-size: var(--font-small);
 }
-/* Shop list */
 
-.shop__container{
+.filters__search,
+.filters__order {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: var(--spacing-12);
 }
 
-.shop__items-list{
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(3,1fr);
+.filters__search input,
+.filters__order select {
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
 }
 
-/* paginator */
-
-.paginator{
-    margin-top: var(--spacing-68);
-}
-
-.paginator ol{
+.filters__price div {
+    margin-top: var(--spacing-12);
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.filters__price label {
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+.filters__price input {
+    width: 70px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: var(--font-medium);
+    border: 2px solid var(--dark-solid);
+    padding: 4px var(--spacing-8);
+}
+
+.filters__checks {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-8);
 }
 
-.paginator__link{
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    padding: 5px 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 2px solid var(--border-gray);
-    background: #FFF;
-    /* Font */
-    color: var(--bg-dark-solid);
-    font-family: var(--font-base);
-    font-size: var(--font-medium);
-    font-weight: 700;
-    cursor: pointer;
-    transition: var(--transition--01);
+.filters__checks span {
+    margin-bottom: var(--spacing-12);
 }
 
-    .paginator__link--arrow{
-        background-color: var(--gray--02);
-        border: none;
-        color: var(--bg-light-soft);
-    }
+.filters__checks div {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    font-weight: 500;
+    font-size: var(--font-medium);
+}
 
-    .paginator__link--active{
-        border: 2px solid var(--primary-solid);
-        color: var(--primary-solid);
-    }
+.filters__checks div input {
+    accent-color: var(--primary-solid);
+    width: 16px;
+    height: 16px;
+}
 
-    .paginator__link:hover{
-        background-color: var(--primary-solid);
-        color: var(--bg-light-soft);
-        border: none;
-    }
+.shop__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--spacing-36);
+}
 
+.shop__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-28);
+}
 
+.shop__item {
+    flex: 1 1 clamp(250px, 30%, 30%);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-12);
+}
+
+.pagination .pagination__link {
+    display: block;
+    font-size: var(--font-medium);
+    font-weight: 700;
+    border-radius: 4px;
+    padding: var(--spacing-12) var(--spacing-16);
+    border: 2px solid var(--dark-300);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pagination .pagination__link:first-of-type,
+.pagination .pagination__link:last-of-type {
+    color: var(--dark-500);
+}
+
+.pagination .pagination__link:hover {
+    background-color: var(--primary-900);
+    color: var(--light-bg-solid);
+    border-color: var(--primary-500);
+}
+
+.pagination .pagination__link--selected {
+    border-color: var(--primary-solid);
+    color: var(--primary-solid);
+}
